@@ -1924,13 +1924,11 @@
     <bcf:datasource type="file" datatype="bibtex">diss_lit.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">blanchard17</bcf:citekey>
-    <bcf:citekey order="1">redmond16</bcf:citekey>
-    <bcf:citekey order="2">bernanke89</bcf:citekey>
-    <bcf:citekey order="2">bgg99</bcf:citekey>
-    <bcf:citekey order="3">aliber15</bcf:citekey>
+    <bcf:citekey order="1">bernanke89</bcf:citekey>
+    <bcf:citekey order="1">bgg99</bcf:citekey>
+    <bcf:citekey order="2">aliber15</bcf:citekey>
+    <bcf:citekey order="3">minsky82</bcf:citekey>
     <bcf:citekey order="4">minsky82</bcf:citekey>
-    <bcf:citekey order="5">minsky82</bcf:citekey>
     <bcf:citekey order="5">minsky08</bcf:citekey>
     <bcf:citekey order="6">aliber15</bcf:citekey>
     <bcf:citekey order="7">brunnermeier14</bcf:citekey>
@@ -2004,15 +2002,18 @@
     <bcf:citekey order="70">gneiting07</bcf:citekey>
     <bcf:citekey order="71">krueger19</bcf:citekey>
     <bcf:citekey order="72">gneiting08</bcf:citekey>
-    <bcf:citekey order="73">brave12</bcf:citekey>
+    <bcf:citekey order="73">banbura10</bcf:citekey>
     <bcf:citekey order="74">alessandri17</bcf:citekey>
-    <bcf:citekey order="75">banbura10</bcf:citekey>
-    <bcf:citekey order="76">alessandri17</bcf:citekey>
-    <bcf:citekey order="77">banbura10</bcf:citekey>
-    <bcf:citekey order="78">alessandri17</bcf:citekey>
-    <bcf:citekey order="79">clark15</bcf:citekey>
-    <bcf:citekey order="80">eddel11</bcf:citekey>
-    <bcf:citekey order="80">eddel17</bcf:citekey>
+    <bcf:citekey order="75">hubrich15</bcf:citekey>
+    <bcf:citekey order="76">brave12</bcf:citekey>
+    <bcf:citekey order="77">alessandri17</bcf:citekey>
+    <bcf:citekey order="78">banbura10</bcf:citekey>
+    <bcf:citekey order="79">alessandri17</bcf:citekey>
+    <bcf:citekey order="80">banbura10</bcf:citekey>
+    <bcf:citekey order="81">alessandri17</bcf:citekey>
+    <bcf:citekey order="82">clark15</bcf:citekey>
+    <bcf:citekey order="83">eddel11</bcf:citekey>
+    <bcf:citekey order="83">eddel17</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

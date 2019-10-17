@@ -151,6 +151,7 @@ The dataset used in this study is provided by the OECD Main Economic Indicators 
 The data is displayed in Figure \ref{fig:ind_prod}. As can be seen the series are clearly trending. Therefore I follow the standard approach for forecasting IPI and compute monthly growth rates based on the first difference of the logarithm of the series. After computing the growth rates the data is demeaned.\footnote{This is mainly done to avoid zero values in the growth rates which can lead to problems for the stochastic volatility sampler discussed below. If zero values still exist after demeaning the series (or during the sampling procedure), then a small value, $\varepsilon = 0.0001$, is added to the data.} Figure \ref{fig:ind_prod_growth} depicts the growth rates starting in January 1970 and ending in June 2019. 
 
 \begin{figure}
+\captionsetup{singlelinecheck=false, justification=justified}
 \centering \includegraphics[width=1\textwidth]{../plots/ind_prod_level.pdf} 
 \caption{Industrial Production Indices; Countries: Austria (AUT), Germany (DEU), Spain (ESP), France (FRA), Greece (GRC), Italy (ITA), the Netherlands (NLD), and Portugal (PRT); Base Year = 2015; Source: OECD MEI.}
 \label{fig:ind_prod} 
@@ -165,7 +166,9 @@ Furthermore summary statistics for all countries are provided in Tables \ref{tab
 Tables \ref{tab:desc70}-\ref{tab:desc10} show that no uniform pattern exists across countries and decades. For example, while the range of growth rates -- defined by minimum and maximum growth rates -- is relatively small for Germany for the first sample period, its minimum and maximum growth rates are relatively large in the 1980s, when compared with other countries. The same pattern is observed for the Netherlands. Large changes in growth rates were seen in the 1970s in Austria, Spain, Italy and Portugal, while growth rates are relatively stable in France for all periods. In the 1980s the largest swings in growth rates are observed for Germany, Greece, and the Netherlands, while Greece stands out in the 1990s with respect to this metric. 
 For the period between 2000 and the end of 2009 the Netherlands, Germany, and Greece show the largest negative growth rates. Portugal exhibits large swings in growth rates during this period. The same holds for Greece. Since 2010 Greece has shown again the largest swings in IPI growth rates. This doesn't come as a surprise given the Global Financial Crisis starting in 2007/2008 and the European debt crisis starting in 2009/2010. Large changes in industrial production are also observed in the Netherlands and in Portugal for this time period. Taking a look at the right part of Table \ref{tab:desc10}, France stands out at the country with the smallest variation in growth rates over the whole sample. The other seven countries show much larger minimum and maximum values. Especially Greece and Italy stand out in this respect. But also the European core countries besides France -- Austria, Germany, and the Netherlands -- exhibit strong fluctuations in IPI growth over the sample.
 
-\begin{table} \centering 
+\begin{table} 
+\captionsetup{singlelinecheck=false, justification=justified}
+\centering 
 \resizebox{\textwidth}{!}{\begin{tabular}{@{\extracolsep{5pt}} cccccccccccc} 
 \\[-1.8ex]\hline 
 \hline \\[-1.8ex] 
@@ -267,7 +270,7 @@ I use a conjugate prior structure for the autoregressive parameters, $\bm{b} = (
 with $\bm{y} = (y_1,\ldots,y_T)^T$. The parameters of equations \eqref{eq:post_b} and \eqref{eq:post_sigma} are given by $\bm{b_1} = (\bm{X^TX} + \bm{B_0}^{-1})^{-1}(\bm{X^Ty} + \bm{B_0}^{-1}\bm{b_0})$, $\bm{B_1} = \sigma^2(\bm{X^TX} + \bm{B_0}^{-1})^{-1}$, $c_1 = c_0 + T/2 + P/2$, and $C_1 = C_0 + 0.5 \times ((\bm{y} - \bm{X}\bm{b})^T(\bm{y} - \bm{X}\bm{b}) + (\bm{b} - \bm{b_0})^T\bm{B_0}^{-1}(\bm{b} - \bm{b_0}))$. Matrix $\bm{X}$ is defined the usual way as a matrix including a column of ones and the lagged values $\bm{y_{t-1}},\ldots,\bm{y_{t-p}}$.%,  $\bm{X} = [\bm{1}, \bm{y_{t-1}},\ldots,\bm{y_{t-p}}]$. 
 Given the convenient form of the conditional posterior distributions a Gibbs-sampling procedure can be used to sample iteratively from equations \eqref{eq:post_b} and \eqref{eq:post_sigma}, where the starting value is chosen as $\sigma^2 = 1$.
 
-As stated above, I estimate two versions of the $AR$ model. The first model, $AR_{rec}$, estimates the autoregressive model on an expanding (recursive) data window. The second model, $AR_{roll}$, utilizes a rolling data window containing data of the ten most recent years. Descriptive statistics in Section \ref{sec:data} revealed that the variances of the growth rates of the industrial production indices change over time. As a consequence, model $AR_{rec}$ might overestimate (underestimate) the variance of the industrial production growth rate, if observations in the more distant past are characterized by a larger (smaller) variance. The $AR_{roll}$ model can be regarded as a simple way of taking these changes in the variance structure into account. In addition, a rolling window might also work as a remedy against structural breaks which affect many macroeconomic time series; see \textcite{stock96} for the US and \textcite{marc02} for Euro area evidence.
+As stated above, I estimate two versions of the $AR$ model. The first model, $AR_{rec}$, estimates the autoregressive model on an expanding (recursive) data window. The second model, $AR_{roll}$, utilizes a rolling data window containing data of the ten most recent years. Descriptive statistics in Section \ref{sec:data} revealed that the variances of the growth rates of the industrial production indices change over time. As a consequence, model $AR_{rec}$ might overestimate (underestimate) the variance of the industrial production growth rate, if observations in the more distant past are characterized by a larger (smaller) variance. The $AR_{roll}$ model can be regarded as a simple way of taking these changes in the variance structure into account. In addition, a rolling window might also work as a remedy against structural breaks which affect many macroeconomic time series; see \textcite{stock96} for the U.S. and \textcite{marc02} for Euro area evidence.
 
 %As suggested initally by \textcite{taylor82} I model the logarithm of the squared volatilities as a latent autoregressive process. The random walk stochastic volatility (RWSV) model is given by:
 
@@ -300,6 +303,7 @@ I use non-informative priors for $\mu$ and $\sigma_u^2$ which are implemented by
 I therefore follow the approach of \textcite{clark15} and estimate five different AR-SV models with relatively tight prior distributions for $\phi$ for the first four models. The hyper-parameters, as well as the implied expected values and variances, for $\phi$ for the first four models are summarized in Table \ref{tab:beta_prior}. Finally, I also estimate a fifth autoregressive model with stochastic volatility (AR-SV5) with $a_\phi = b_\phi = 1$ which implies a uniform prior for $\phi$ on $(-1, 1)$.
 
 \begin{table}
+\captionsetup{singlelinecheck=false, justification=justified}
 \centering
 \begin{tabular}{@{\extracolsep{5pt}}lrrrr} 
 \\[-1.8ex]\hline 
@@ -395,7 +399,9 @@ Moreover, I compare the forecast performance of the eight contender models with 
 
 However, my focus lies on evaluating forecast accuracy. Inference about which model may represent the more accurate description of the data generating process is not of interest here. In such a setting the Diebold-Mariano test remains useful as pointed out by \textcite{diebold15}. I therefore apply the test by \textcite{clark07}\footnote{The estimate of the variance of the test is based on the HAC estimator of \textcite{newey94}.} and the Diebold-Mariano test. Both tests are formulated as one-sided tests with the alternative hypothesis stating that the given contender model is outperforming the benchmark model. The results of the two tests are indicated in Tables \ref{tab:mse1}-\ref{tab:mse4}. Significant results for the Diebold-Mariano test are shown next to the relative $RMSE$ in the superscript, while the results of the Clark-West test are shown as subscripts.
 
-\begin{table}[!htbp] \centering 
+\begin{table}[!htbp] 
+\captionsetup{singlelinecheck=false, justification=justified}
+\centering 
 \resizebox{\textwidth}{!}{\begin{tabular}{@{\extracolsep{5pt}} ccccccccc} 
 \\[-1.8ex]\hline 
 \hline \\[-1.8ex] 
@@ -427,7 +433,9 @@ First of all, Tables \ref{tab:mse1}-\ref{tab:mse4} show that the $AR_{rec}$ mode
 
 As already mentioned above, I also use the Diebold-Mariano test and the Clark-West test to evaluate forecasting performances of the forecasting models.\footnote{I do not evaluate the Diebold-Mariano test and the Clark-West test for the linear prediction pool. In addition, the Clark-West test is not evaluated for the rolling window autoregressive model.}  Here a similar picture emerges: the benchmark model performs very well. In fact, for Austria, Germany, and France the contender models cannot outperform the benchmark model at any horizon with respect to the two tests. This result does not hold for the other five countries. As can be seen from Table \ref{tab:mse1}, $AR_{roll}$ and the autoregressive models with stochastic volatility perform significantly better in Spain than the $AR_{rec}$ model. For Italy the AR-SV models perform very well in the short run as well with respect to the two tests. Significant test results are also reported for all models for the Netherlands with the exception of the rolling window autoregressive model. In the last column of Table \ref{tab:mse1} it can be seen that the AR-SV-RW model improves forecasts for Portugal one month ahead over the benchmark model according to the Clark-West test.
 
-\begin{table}[!htbp] \centering 
+\begin{table}[!htbp] 
+\captionsetup{singlelinecheck=false, justification=justified}
+\centering 
 \resizebox{\textwidth}{!}{\begin{tabular}{@{\extracolsep{5pt}} ccccccccc} 
 \\[-1.8ex]\hline 
 \hline \\[-1.8ex] 
@@ -460,6 +468,7 @@ Table \ref{tab:mse2} shows the point forecast performance for a three months ahe
 Turning to the two formal prediction test it can be seen that significant forecasting improvements are again provided for Spain, Italy, and the Netherlands by the AR-SV models. For Portugal, $AR_{roll}$ and certain AR-SV models show significant results. A  counter-intuitive result is reported for the Netherlands in Table \ref{tab:mse2}: the $LSTAR$ model delivers the best results for $rRMSE$, but fails to show significant improvement with respect to the Diebold-Mariano and Clark-West tests. On the other hand, the Diebold-Mariano test shows significant results for $AR_{roll}$ and the Clark-West test reports significant improvements for AR-SV1, AR-SV2, and AR-SV3. Moreover, $rRMSE$ is larger than one for all four models. A similar result is observed for the three month horizon for Portugal. Here $AR_{roll}$, AR-SV1 and AR-SV2 show significant test results although their $rRMSE$ are larger than one. 
 
 \begin{figure}
+\captionsetup{singlelinecheck=false, justification=justified}
 \centering \includegraphics[width=1\textwidth]{../plots/nld_rmse_hist.pdf} 
 \caption{rRMSE for models AR-SV1, AR-SV2, and AR-SV3; \textbf{three months ahead} for the Netherlands.}
 \label{fig:hist_rmse_nld} 
@@ -469,7 +478,9 @@ Turning to the two formal prediction test it can be seen that significant foreca
 This result is explained by a small number of large outliers for the $AR_{roll}$ and the AR-SV models which affect $rRMSE$ more strongly than the two forecast performance tests. For illustration purposes Figure \ref{fig:hist_rmse_nld} shows a histogram of $rRMSE$ for models AR-SV1, AR-SV2, and AR-SV3 for the Netherlands three months ahead. Here I take all 200 pseudo out-of-sample forecasts for the three autoregressive models with stochastic volatility and divide them by the forecasts of $AR_{rec}$. As can be seen from the Figure, all three models exhibit a small number of large outliers. As a consequence the average $rRMSE$ of the three models increases. Note that in Tables \ref{tab:mse1}-\ref{tab:mse4} average $RMSE$ are computed first for all models before the $rRMSE$ ratios are computed. This approach mitigates the effects of extreme outliers as shown in Figure \ref{fig:hist_rmse_nld}, but cannot eliminate them. Therefore the Mariano-Diebold and Clark-West tests are applied as well to allow for improved inference regarding the point forecasts.
 
 
-\begin{table}[!htbp] \centering 
+\begin{table}[!htbp] 
+\captionsetup{singlelinecheck=false, justification=justified}
+\centering 
 \resizebox{\textwidth}{!}{\begin{tabular}{@{\extracolsep{5pt}} ccccccccc} 
 \\[-1.8ex]\hline 
 \hline \\[-1.8ex] 
@@ -499,7 +510,9 @@ Linear Pool & $1.008$ & $0.980$ & $0.991$ & $0.992$ & $1.001$ & $0.961$ & $1.027
 
 Table \ref{tab:mse3} shows the results for six months ahead forecasts. Again the autoregressive models with stochastic volatility dominate for most countries with respect to $rRMSE$. The only exceptions are Austria, where $AR_{rec}$ has the smallest $RMSE$, and the Netherlands where the $LSTAR$ model predicts best. The Diebold-Mariano test reports significant forecasting improvements for the autoregressive models with stochastic volatility for Spain, Greece, and Italy. The results for the Clark-West test are similar; improvements are shown for the autoregressive models with stochastic volatility for Spain, Greece, and Italy.\footnote{Once again the counter-intuitive entry for Greece is explained by large outliers.} Finally, the last row shows the familiar picture that the linear prediction pool performs better for most countries than the benchmark model but does not improve upon the best model for any country.
 
-\begin{table}[!htbp] \centering 
+\begin{table}[!htbp] 
+\captionsetup{singlelinecheck=false, justification=justified}
+\centering 
 \resizebox{\textwidth}{!}{\begin{tabular}{@{\extracolsep{5pt}} ccccccccc}
 \\[-1.8ex]\hline 
 \hline \\[-1.8ex] 
@@ -531,7 +544,9 @@ Lastly, Table \ref{tab:mse4} summarizes the results for the twelve months ahead 
 
 Tables \ref{tab:logs1}-\ref{tab:logs4} report the logarithmic score of the benchmark model and the relative $LogS$ for all the other models. The relative logarithmic score, $rLogS$, for model $m$ is defined as $rLogS_m = LogS_m - LogS_{AR_{rec}}$. By subtracting the penalty term $LogS_{AR_{rec}}$ from $LogS_m$ a value smaller than zero defines an improvement in forecasting industrial production growth over the benchmark model.\footnote{Regarding density forecasts I only discuss relative scores without applying any formal tests. Note that the commonly used test by \textcite{amisano07} requires a rolling or fixed estimation window and is therefore not appropriate here.} 
 
-\begin{table}[!htbp] \centering 
+\begin{table}[!htbp] 
+\captionsetup{singlelinecheck=false, justification=justified}
+\centering 
 \resizebox{\textwidth}{!}{\begin{tabular}{@{\extracolsep{5pt}} ccccccccc} 
 \\[-1.8ex]\hline 
 \hline \\[-1.8ex] 
@@ -555,7 +570,9 @@ Linear Pool & $-0.317$ & $-0.276$ & $-0.377$ & $-0.252$ & $-0.086$ & $-0.310$ & 
 
 Table \ref{tab:logs1} shows that for the one month ahead forecast the AR-SV models perform best for all countries with respect to $LogS$. Improvements are substantial for Austria, Germany, Spain, France, and Italy. They are smaller for the Netherlands, Portugal, and especially Greece. The $LSTAR$ model on the other hand performs worse than the benchmark model for all countries, while the linear prediction pool outperforms the benchmark model for all countries. At the same time linear prediction pools cannot compete with the best country models. Finally, the rolling window autoregressive model does not predict well with respect to density forecasts. In Tables \ref{tab:mse1}-\ref{tab:mse4} it was shown that $AR_{roll}$ delivers high quality forecasts for most countries with respect to point forecasts. This result does not hold for density forecasts. The moving window autoregressive models cannot improve forecasts for any country at any horizon with respect to $rLogS$. This is also the case for $rCRPS$ as shown below. The rolling window autoregressive model is therefore not further discussed with respect to density forecasts.
 
-\begin{table}[!htbp] \centering 
+\begin{table}[!htbp]
+\captionsetup{singlelinecheck=false, justification=justified}
+\centering 
 \resizebox{\textwidth}{!}{\begin{tabular}{@{\extracolsep{5pt}} ccccccccc} 
 \\[-1.8ex]\hline 
 \hline \\[-1.8ex] 
@@ -579,7 +596,9 @@ Linear Pool & $-0.236$ & $0.070$ & $-0.375$ & $-0.331$ & $-0.095$ & $-0.374$ & $
 
 Results for the three months ahead forecasts for $LogS$ are very similar to one month ahead forecasts as shown in Table \ref{tab:logs2}. Again, the AR-SV models perform best. However, for Germany the $AR_{rec}$ model is almost competitive compared with the best performing autoregressive model with stochastic volatility. Improvements are again substantial for Austria, Spain, France, and Italy. They are somewhat smaller for Germany, Greece, the Netherlands, and Portugal. As before the linear prediction pools cannot compete with the best country models. In fact, in Germany, the linear prediction pool is even outperformed by the benchmark model. However, as stated above, for this particular horizon the $AR_{rec}$ model performs very well for Germany.
 
-\begin{table}[!htbp] \centering 
+\begin{table}[!htbp]
+\captionsetup{singlelinecheck=false, justification=justified}
+\centering 
 \resizebox{\textwidth}{!}{\begin{tabular}{@{\extracolsep{5pt}} ccccccccc} 
 \\[-1.8ex]\hline 
 \hline \\[-1.8ex] 
@@ -603,7 +622,9 @@ Linear Pool & $-0.230$ & $0.249$ & $-0.324$ & $-0.380$ & $-0.133$ & $-0.369$ & $
 
 Table \ref{tab:logs3} reports results on $rLogS$ for the six months ahead forecasts. As for the two shorter forecasting horizons discussed before, the AR-SV models perform best for most countries. However, for Germany the best model is now given by the $LSTAR$ model, which outperforms the AR-SV3 model by a small margin. With respect to the linear prediction pool results it can be seen that a prediction pool forecasts badly for Germany where its performance is worse than the benchmark model. At the same time, the linear prediction pool finally outperforms the best country model for one country, namely France. The improvement in forecasting ability is not negligible. While the $rLogS$ is $-0.228$ for the best individual model in France, the AR-SV5 model, the relative score is $-0.38$ for the prediction pool, a substantial improvement.
 
-\begin{table}[!htbp] \centering 
+\begin{table}[!htbp] 
+\captionsetup{singlelinecheck=false, justification=justified}
+\centering 
 \resizebox{\textwidth}{!}{\begin{tabular}{@{\extracolsep{5pt}} ccccccccc} 
 \\[-1.8ex]\hline 
 \hline \\[-1.8ex] 
@@ -632,6 +653,7 @@ Table \ref{tab:logs4} suggests that taking changes in volatility into account do
 As can be seen from Figure \ref{fig:deu_dens} the forecasts for the $LSTAR$ model and the $AR_{rec}$ model are very similar for the entire forecasting period. This is also reflected in $rLogS$ for the $LSTAR$ model which is only slightly above the score for the recursive autoregressive model which performs best for twelve months ahead forecasts for Germany. Furthermore, it is remarkable that forecast intervals do not change much over time for Germany. Note that Figure \ref{fig:deu_dens} shows the results of 200 estimated models. On the other hand, it was shown in Section \ref{sec:data} that Germany is distinguished by low levels of volatility in its IPI growth rates. Only the 1980s are standing out as a more volatile time period in Germany. As a consequence forecast intervals drawn from 200 posterior predictive distributions do not change much over time.
 
 \begin{figure}
+\captionsetup{singlelinecheck=false, justification=justified}
 \centering \includegraphics[width=1\textwidth]{../plots/density_compare_DEU_12.pdf} 
 \caption{Quantiles for models AR-SV-RW (top), $AR_{roll}$ (middle), and $LSTAR$ (bottom); \textbf{twelve months ahead} for Germany. The grey shaded area depicts the minimum and maximum values of the sampled forecasts. The light blue shaded area shows the 90\% forecast interval, the dark blue shaded area depicts the 68\% forecast interval. The black line signals the realized values. The vertical dashed red line shows the onset of the Great Financial Crisis in September 2008. The red dot signals the observed value for January 2009.}
 \label{fig:deu_dens} 
@@ -644,7 +666,9 @@ The other two models depicted in Figure \ref{fig:deu_dens} have severe problems 
 
 Finally, I investigate the predictive capabilities for all models with respect to the second scoring rule, namely $CRPS$. The relative $CRPS$ for model $m$ is given by $rCRPS_m = CRPS_{m} / CRPS_{AR_{rec}}$. Similar to the case of $rRMSE_m$, a value smaller than one for $rCRPS_m$ signals an improvement in forecasting over the recursively estimated autoregressive model. The results for the $CRPS$ are reported in Tables \ref{tab:crps1}-\ref{tab:crps4}. 
 
-\begin{table}[!htbp] \centering 
+\begin{table}[!htbp] 
+\captionsetup{singlelinecheck=false, justification=justified}
+\centering 
 \resizebox{\textwidth}{!}{\begin{tabular}{@{\extracolsep{5pt}} ccccccccc} 
 \\[-1.8ex]\hline 
 \hline \\[-1.8ex] 
@@ -668,7 +692,9 @@ Linear Pool & $0.848$ & $0.888$ & $0.826$ & $0.895$ & $0.966$ & $0.848$ & $0.944
 
 Results for the one month ahead forecasts for $rCRPS$ are similar to $rLogS$. Table \ref{tab:crps1} shows that the AR-SV models perform very well. The $LSTAR$ model predicts worse than the recursively estimated autoregressive model for all countries, although the relative forecasting performance is almost as good as for the linear model. Still, as discussed in the introduction, given the higher cost of implementing and estimating the $LSTAR$ model this result hardly justifies using the $LSTAR$ model for density forecasts with few exceptions as discussed above for $rLogS$ and below for $rCRPS$. Regarding the linear prediction pool it can be seen again that the pool cannot outperform the best country models. For France the linear prediction pool performs equally well as the AR-SV5 which dominates for one month ahead forecasts in France. 
 
-\begin{table}[!htbp] \centering 
+\begin{table}[!htbp] 
+\captionsetup{singlelinecheck=false, justification=justified}
+\centering 
 \resizebox{\textwidth}{!}{\begin{tabular}{@{\extracolsep{5pt}} ccccccccc} 
 \\[-1.8ex]\hline 
 \hline \\[-1.8ex] 
@@ -692,7 +718,9 @@ Linear Pool & $0.903$ & $0.877$ & $0.838$ & $0.855$ & $0.958$ & $0.826$ & $0.982
 
 Turning to three months ahead forecasts, Table \ref{tab:crps2} reports again that the AR-SV models perform best. The $LSTAR$ model show some promise in Italy, but is outperformed by autoregressive models with stochastic volatility as before. Neither can the linear prediction pool improve forecasts over the best country models. Regarding the six months forecasts Table \ref{tab:crps3} shows similar results to Table \ref{tab:crps2}; the autoregressive models with stochastic volatility perform best. The $LSTAR$ model cannot compete with them and only outperforms the benchmark model for Italy. The linear prediction pool shows high quality forecast results but does not perform as well as the best country models.
 
-\begin{table}[!htbp] \centering 
+\begin{table}[!htbp] 
+\captionsetup{singlelinecheck=false, justification=justified}
+\centering 
 \resizebox{\textwidth}{!}{\begin{tabular}{@{\extracolsep{5pt}} ccccccccc} 
 \\[-1.8ex]\hline 
 \hline \\[-1.8ex] 
@@ -714,7 +742,9 @@ Linear Pool & $0.909$ & $0.883$ & $0.871$ & $0.825$ & $0.942$ & $0.841$ & $0.984
 \label{tab:crps3} 
 \end{table} 
 
-\begin{table}[!htbp] \centering 
+\begin{table}[!htbp] 
+\captionsetup{singlelinecheck=false, justification=justified}
+\centering 
 \resizebox{\textwidth}{!}{\begin{tabular}{@{\extracolsep{5pt}} ccccccccc} 
 \\[-1.8ex]\hline 
 \hline \\[-1.8ex] 
@@ -755,7 +785,7 @@ It has been argued in the literature -- see, for example, \textcite{marc02} and 
 
 Indeed, I show that the autoregressive models with constant variance perform very well with respect to point forecasts. At the same time I find that the model can be improved upon -- at least at shorter horizons -- by autoregressive models with stochastic volatility for some countries. $LSTAR$ models improve point forecasts for certain countries and forecast horizons as well. Finally, regarding linear prediction pools results were rather disappointing. They only helped improving density forecast for longer horizons with respect to $LogS$. On the other hand, they did not improve point forecasts or density forecasts with respect to $CRPS$.
 
-In this paper I focused on autoregressive models with stochastic volatility and the $LSTAR$ model for forecasting. Of course there exist many more univariate forecasting models which could be used for forecasting industrial production growth, for example the unobserved components model with stochastic volatility of \textcite{stock07}. \textcite{bos10} report positive results for such a model for US industrial production growth. Furthermore, the lag length was fixed for all countries and models in this study. Alternatives to using a fixed lag length are numerous. In fact, \textcite{lopes06} extend the basic $LSTAR$ algorithm with a reversible jump MCMC procedure to account for uncertainty of the lag length as well. However, computation time for eight countries and 200 forecasts is already substantial. The implementation of additional models and the extension of the applied models is therefore left for future work.
+In this paper I focused on autoregressive models with stochastic volatility and the $LSTAR$ model for forecasting. Of course there exist many more univariate forecasting models which could be used for forecasting industrial production growth, for example the unobserved components model with stochastic volatility of \textcite{stock07}. \textcite{bos10} report positive results for such a model for U.S. industrial production growth. Furthermore, the lag length was fixed for all countries and models in this study. Alternatives to using a fixed lag length are numerous. In fact, \textcite{lopes06} extend the basic $LSTAR$ algorithm with a reversible jump MCMC procedure to account for uncertainty of the lag length as well. However, computation time for eight countries and 200 forecasts is already substantial. The implementation of additional models and the extension of the applied models is therefore left for future work.
  
 Finally, all algorithms for the models described in Section \ref{sec:models} were written \textbf{\textsf{R}} and \textbf{\textsf{C}\texttt{++}} and integrated via the \textbf{\textsf{Rcpp}} package \parencite{eddel11, eddel17}. The algorithm by \textcite{kastner14} was taken from package \textbf{\textsf{stochvol}} \parencite{kastner16}. %and forecast evaluation methods were provided by the package \textbf{scoringRules} \parencite{jordan18}. 
 The code is available at \url{https://github.com/alexhaider/Bayes_VARs}.\footnote{The functions are provided as-is with very little documentation so far. They are not available as a \textbf{\textsf{R}} package.}

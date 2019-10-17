@@ -264,49 +264,6 @@
       \verb https://EconPapers.repec.org/RePEc:eee:macchp:1-21
       \endverb
     \endentry
-    \entry{blanchard17}{report}{}
-      \name{author}{2}{}{%
-        {{uniquename=0,uniquepart=base,hash=118a2b4dfce7607433ac8e0dd3927708}{%
-           family={Blanchard},
-           familyi={B\bibinitperiod},
-           given={Olivier\bibnamedelima J.},
-           giveni={O\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=0}}%
-        {{uniquename=0,uniquepart=base,hash=8a7b4f64a632492a32fbd2efa2b24d82}{%
-           family={Summers},
-           familyi={S\bibinitperiod},
-           given={Lawrence\bibnamedelima H.},
-           giveni={L\bibinitperiod\bibinitdelim H\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{institution}{1}{%
-        {National Bureau of Economic Research, Inc}%
-      }
-      \strng{namehash}{a327648c57f3a89c7bc9346458375d4b}
-      \strng{fullhash}{a327648c57f3a89c7bc9346458375d4b}
-      \strng{bibnamehash}{a327648c57f3a89c7bc9346458375d4b}
-      \strng{authorbibnamehash}{a327648c57f3a89c7bc9346458375d4b}
-      \strng{authornamehash}{a327648c57f3a89c7bc9346458375d4b}
-      \strng{authorfullhash}{a327648c57f3a89c7bc9346458375d4b}
-      \field{sortinit}{B}
-      \field{sortinithash}{276475738cc058478c1677046f857703}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{The obvious lesson from the Great Financial Crisis is that the financial system matters and financial crises will probably happen again. The second, more general, lesson is that the economy is often not self-stabilizing. These two lessons, together with an environment where neutral interest rates are likely to remain low, have clear implications for the design of stabilization policies. At a minimum, they suggest that policies may need to become more aggressive, both ex-ante and ex-post, with a rebalancing of the roles of monetary, fiscal and financial policies. In particular, while low neutral rates decrease the scope for using monetary policy, they increase the scope for using fiscal policy. Think of such rebalancing as evolution. If however, neutral rates become even lower, or financial regulation turns out to be insufficient to prevent crises, more dramatic measures, including larger fiscal deficits, revised monetary policy targets, or sharper restrictions on the financial system, may be needed. Think of this as revolution. Time will tell.}
-      \field{month}{12}
-      \field{number}{24179}
-      \field{title}{{Rethinking Stabilization Policy: Evolution or Revolution?}}
-      \field{type}{NBER Working Papers}
-      \field{year}{2017}
-      \verb{urlraw}
-      \verb https://ideas.repec.org/p/nbr/nberwo/24179.html
-      \endverb
-      \verb{url}
-      \verb https://ideas.repec.org/p/nbr/nberwo/24179.html
-      \endverb
-    \endentry
     \entry{brave12}{article}{}
       \name{author}{2}{}{%
         {{uniquename=0,uniquepart=base,hash=ea5b4767d8b398d48bf59543437e3909}{%
@@ -1185,6 +1142,49 @@
       \field{pages}{273\bibrangedash 326}
       \range{pages}{54}
     \endentry
+    \entry{hubrich15}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=ac58833cf22ff85c82c8f02989473059}{%
+           family={Hubrich},
+           familyi={H\bibinitperiod},
+           given={Kirstin},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=96196085c8c005bf753da67de5ef78a3}{%
+           family={Tetlow},
+           familyi={T\bibinitperiod},
+           given={Robert\bibnamedelima J.},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3bdcd031e4472a4bb09bcf931847a3fb}
+      \strng{fullhash}{3bdcd031e4472a4bb09bcf931847a3fb}
+      \strng{bibnamehash}{3bdcd031e4472a4bb09bcf931847a3fb}
+      \strng{authorbibnamehash}{3bdcd031e4472a4bb09bcf931847a3fb}
+      \strng{authornamehash}{3bdcd031e4472a4bb09bcf931847a3fb}
+      \strng{authorfullhash}{3bdcd031e4472a4bb09bcf931847a3fb}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A financial stress index for the United States is introduced—one used by the staff of the Federal Reserve Board during the financial crisis of 2008–2009—and its׳ interaction with real activity, inflation and monetary policy is investigated using a Markov-switching VAR model, estimated with Bayesian methods. A “stress event” is defined as a period of adverse latent Markov states. Results show that time variation is statistically important, that stress events line up well with historical events, and that shifts to stress events are highly detrimental for the economy. Conventional monetary policy is shown to be weak during such periods.}
+      \field{journaltitle}{Journal of Monetary Economics}
+      \field{number}{C}
+      \field{title}{Financial stress and economic dynamics: The transmission of crises}
+      \field{volume}{70}
+      \field{year}{2015}
+      \field{pages}{100\bibrangedash 115}
+      \range{pages}{16}
+      \verb{urlraw}
+      \verb https://EconPapers.repec.org/RePEc:eee:moneco:v:70:y:2015:i:c:p:100-115
+      \endverb
+      \verb{url}
+      \verb https://EconPapers.repec.org/RePEc:eee:moneco:v:70:y:2015:i:c:p:100-115
+      \endverb
+      \keyw{Nonlinearity; Markov switching; Financial crises; Monetary policy;}
+    \endentry
     \entry{jac94}{article}{}
       \name{author}{3}{}{%
         {{uniquename=0,uniquepart=base,hash=cdac4d198ca4b82930fb0c29041092b3}{%
@@ -1692,48 +1692,6 @@
       \verb{url}
       \verb https://EconPapers.repec.org/RePEc:bpj:sndecm:v:18:y:2014:i:4:p:15:n:4
       \endverb
-    \endentry
-    \entry{redmond16}{article}{}
-      \name{author}{2}{}{%
-        {{uniquename=0,uniquepart=base,hash=192fa886d500c8c0d9a6b9d76eb1d844}{%
-           family={Redmond},
-           familyi={R\bibinitperiod},
-           given={Michael},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{uniquename=0,uniquepart=base,hash=75f68448c3b0b5f56dcc4fff24d0feee}{%
-           family={Van\bibnamedelima Zandweghe},
-           familyi={V\bibinitperiod\bibinitdelim Z\bibinitperiod},
-           given={Willem},
-           giveni={W\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{bd6cf5de20cef0969c345089c1e7cc82}
-      \strng{fullhash}{bd6cf5de20cef0969c345089c1e7cc82}
-      \strng{bibnamehash}{bd6cf5de20cef0969c345089c1e7cc82}
-      \strng{authorbibnamehash}{bd6cf5de20cef0969c345089c1e7cc82}
-      \strng{authornamehash}{bd6cf5de20cef0969c345089c1e7cc82}
-      \strng{authorfullhash}{bd6cf5de20cef0969c345089c1e7cc82}
-      \field{sortinit}{R}
-      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Michael Redmond and Willem Van Zandweghe find that tight credit conditions during the 2007–09 financial crisis dampened productivity, leaving it on a lower trajectory. The article is summarized in The Macro Bulletin.}
-      \field{journaltitle}{Economic Review}
-      \field{number}{Q I}
-      \field{title}{{The Lasting Damage from the Financial Crisis to U.S. Productivity}}
-      \field{year}{2016}
-      \field{pages}{39\bibrangedash 64}
-      \range{pages}{26}
-      \verb{urlraw}
-      \verb https://ideas.repec.org/a/fip/fedker/00036.html
-      \endverb
-      \verb{url}
-      \verb https://ideas.repec.org/a/fip/fedker/00036.html
-      \endverb
-      \keyw{Financial Crisis; Recession; Productivity}
     \endentry
     \entry{schleer15}{article}{}
       \name{author}{2}{}{%
