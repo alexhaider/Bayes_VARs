@@ -1,0 +1,24 @@
+[2] Config.pm:302> INFO - This is Biber 2.9
+[2] Config.pm:305> INFO - Logfile is 'forecasting_vars.blg'
+[138] biber:313> INFO - === Tue Oct  8, 2019, 15:37:25
+[264] Biber.pm:371> INFO - Reading 'forecasting_vars.bcf'
+[426] Biber.pm:857> INFO - Found 44 citekeys in bib section 0
+[471] Biber.pm:3981> INFO - Processing section 0
+[546] Biber.pm:4154> INFO - Looking for bibtex format file 'diss_lit.bib' for section 0
+[593] bibtex.pm:1468> INFO - LaTeX decoding ...
+[937] bibtex.pm:1294> INFO - Found BibTeX data source 'diss_lit.bib'
+[1016] Utils.pm:169> WARN - month field 'March' in entry 'bernanke89' is not an integer - this will probably not sort properly.
+[1193] Utils.pm:169> WARN - month field 'February' in entry 'brunnermeier14' is not an integer - this will probably not sort properly.
+[1202] Utils.pm:169> WARN - month field 'February' in entry 'he14' is not an integer - this will probably not sort properly.
+[1263] Utils.pm:169> WARN - month field 'September' in entry 'stock03' is not an integer - this will probably not sort properly.
+[1339] Utils.pm:169> WARN - month field 'August' in entry 'stock02' is not an integer - this will probably not sort properly.
+[1701] Utils.pm:169> WARN - month field 'Jul' in entry 'gneiting08' is not an integer - this will probably not sort properly.
+[1714] Utils.pm:169> WARN - month field 'June' in entry 'brave12' is not an integer - this will probably not sort properly.
+[1766] Utils.pm:169> WARN - month field 'aug' in entry 'eddel17' is not an integer - this will probably not sort properly.
+[1915] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1915] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1915] Biber.pm:3809> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[1915] Biber.pm:3815> INFO - No sort tailoring available for locale 'en-US'
+[2111] bbl.pm:617> INFO - Writing 'forecasting_vars.bbl' with encoding 'UTF-8'
+[2178] bbl.pm:720> INFO - Output to forecasting_vars.bbl
+[2178] Biber.pm:110> INFO - WARNINGS: 8

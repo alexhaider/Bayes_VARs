@@ -1,0 +1,524 @@
+\documentclass[12pt,letterpaper,fleqn]{article}           % fleqn: align equations left
+
+% Document:
+\usepackage{geometry}                                     % Custom margins for single page, etc.
+\usepackage{fullpage}                                     % Use the full page
+\usepackage{setspace}                                     % Enables custom margins, doublespacing, etc.
+\usepackage{pdflscape}                                    % Use: \begin{landscape} ... \end{landscape}
+
+% Font/text:
+%\usepackage[latin9]{inputenc}                             % Font definition and input type
+\usepackage[T1]{fontenc}                                  % Font output type 
+\usepackage[utf8]{inputenc}
+\usepackage[font=footnotesize,labelfont=bf]{caption}
+\usepackage{tgtermes}
+\usepackage{lmodern}                                      % Latin Modern fonts
+\usepackage{textcomp}                                     % Supports many additional symbols
+\usepackage{amsmath}                                      % Math equations, etc.
+\usepackage{amsthm}                                       % Math theorems, etc.
+\usepackage{amsfonts}                                     % Math fonts (e.g. script fonts)
+\usepackage{amssymb}                                      % Math symbols such as infinity
+\usepackage{mathtools}
+%\usepackage[scr=boondox]{mathalfa}
+\usepackage{dsfont}
+%\usepackage{breqn}
+%\usepackage[sc,osf]{mathpazo}
+%\usepackage[euler-digits,small]{eulervm}
+\AtBeginDocument{\renewcommand{\hbar}{\hslash}}
+\DeclareMathOperator*{\Max}{Max}                          % Better looking max function
+\DeclareMathOperator*{\Min}{Min}                          % Better looking min function
+\usepackage{xcolor}                                       % Enables colored text
+\definecolor{darkblue}{rgb}{0.0,0.0,0.66}                 % Custom color: dark blue
+\usepackage[hyperfootnotes=false,bookmarksopen]{hyperref} % Enable hyperlinks, expand menu subtree
+\hypersetup{                                              % Custom hyperlink settings
+    pdffitwindow=false,                                   % true: window fit to page when opened
+    pdfstartview={XYZ null null 1.00},                    % Fits the default zoom of the page to 100%
+    pdfnewwindow=true,                                    % Links in new window
+    colorlinks=true,                                      % false: boxed links; true: colored links
+    linkcolor=darkblue,                                   % Color of internal links
+    citecolor=darkblue,                                   % Color of links to bibliography
+    urlcolor=darkblue  }                                  % Color of external links
+
+% Images:
+\usepackage{graphicx}                                     % Allows more types of images to be included
+\usepackage[position=bottom]{subfig}                      % Enables arrayed images
+\usepackage[section]{placeins}                            % Forces floats to stay in section
+\usepackage{float}                                        % Used with restylefloat
+\usepackage[justification=centering]{caption}             % Center captions
+%\usepackage{tikz}                                         % Drawing figures with Tikz
+%\usetikzlibrary{decorations}                              % Formating for Tikz
+
+% Tables/arrays:
+%\usepackage{booktabs}                                    % Table format - increases table spacing
+%\newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}}    % Spacing for tables increased
+%\renewcommand{\arraystretch}{1.5}                        % Spaces arrays at 1.5x
+%\usepackage{dcolumn}                                     % Align decimals in tables (as option)
+%\newcolumntype{.}{D{.}{.}{-1}}                           % Align decimals e.g. \begin{tabular}{c...}
+
+% Miscellaneous:
+\interfootnotelinepenalty=10000                           % Footnotes won't break across pages
+\usepackage{datetime}                                     % Custom date format for date field
+\newdateformat{mydate}{\monthname[\THEMONTH] \THEYEAR}    % Defining month year date format
+\usepackage{authblk}                                      % Author affiliation details for title page
+\usepackage[style=authoryear,
+            maxbibnames=99,
+            maxcitenames=2,
+            uniquelist=false,                             % allows for haario et al.(2001) and haario et al.(2001)  
+            doi=false,                                    % instead of haario, laine et al. (2001) and haario et al.(2001)
+            isbn=false,
+            url=false,                            
+            eprint=false]{biblatex}
+\renewcommand*{\nameyeardelim}{\addcomma\addspace}        %comma after surname in \cite{}
+\addbibresource{diss_lit.bib}
+\AtEveryBibitem{\clearfield{month}}
+
+\DeclareCiteCommand{\citeyear}
+    {}
+    {\bibhyperref{\printdate}}
+    {\multicitedelim}
+    {}
+
+\begin{document}
+\begin{titlepage}
+
+%\fontfamily{qtm}\selectfont
+\title{\textbf{Forecasting VAR}}
+
+%\setlength{\abovedisplayskip}{10pt}
+%\setlength{\belowdisplayskip}{10pt}
+\renewcommand*{\Authsep}{, }
+\renewcommand*{\Authand}{, }
+\renewcommand*{\Authands}{, }
+\renewcommand*{\Affilfont}{\small\normalfont}
+%\renewcommand*{\Authfont}{\bfseries}    % make author names boldface    
+\setlength{\affilsep}{2em}   % set the space between author and affiliation
+
+\author[1]{Alexander Haider\thanks{\href{mailto:haidera@newschool.edu}{haidera@newschool.edu}}} %Acknowledgements
+%\author[ ]{\hspace{-0.65cm}\thanks{Alexander Haider (corresponding author): \href{mailto:haidera@newschool.edu}{haidera@newschool.edu}. Acknowledgements}}
+%\author[a]{Coauthor One}
+\affil[1]{The New School for Social Research, New York, NY.}
+\date{\mydate \today}
+\maketitle
+\thispagestyle{empty}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    ABSTRACT
+\vspace{-.5cm}
+\begin{abstract}
+\onehalfspacing
+
+Abstract...
+
+\end{abstract} %\medskip
+
+\onehalfspacing \small
+\noindent \textit{Keywords:} Bayesian vector autoregression, Forecasting, Non-linear Modelling, Stochastic Volatility \\  \textit{JEL Classification:} C53, E37, E44, E50 
+
+%Borio: https://www.sciencedirect.com/science/article/pii/S0378426613003063
+%Financial cycleBusiness cycleMedium termFinancial crisesMonetary economyBalance sheet recessionsBalance sheet repair
+%E30 E44 E50 G10 G20 G28 H30 H50
+
+\end{titlepage}
+
+\clearpage
+\onehalfspacing
+
+%Giacommini and White (according to Doan):
+%In order to apply the asymptotics, you need the forecasts to be computed with rolling estimates using a fixed width estimation window. The fixed width window keeps the estimates for a correct model from collapsing to a point asymptotically.
+%http://www.phdeconomics.sssup.it/documents/Lesson19.pdf:
+%The Diebold-Mariano test should not be applied
+%to situations where the competing forecasts are obtained using
+%two nested models
+%What are the reasons for this?
+%The root of the problem is that, at the population level, if the
+%null hypothesis of equal predictive accuracy is true, the forecast
+%errors from the competing models are exactly the same and
+%perfectly correlated, which means that the numerator and
+%denominator of a Diebold-Mariano test are each limiting to
+%zero as the estimation sample and prediction sample grow.
+%However, when the size of the estimation sample remains finite
+%as the size of the prediction sample grows, parameter
+%estimates are prevented from reaching their probability limits
+%and the Diebold-Mariano test remains asymptotically valid
+%even for nested models, under some regularity assumptions
+%(see Giacomini and White 2003).
+%Essentially, this means that model parameters are estimated
+%using a rolling window of data, rather than an expanding one
+
+\section{Introduction}\label{sec:Introduction}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    INTRODUCTION
+
+More than ten years after the onset of the Global Financial Crisis %and the following \textit{Great Recession} 
+its effects on output, inflation, economic policy and economic research are still ubiquitous as documented by \textcite{blanchard17, redmond16}. In macroeconomic research the crash of 2007-2009 led to a reexamination of the interaction between financial markets and the real side of the economy. The role of financial markets has been neglected for a long time in many macroeconomic models. In the predominant DSGE tradition financial markets were often not explicitly modelled. In cases were they were integrated into the model, the locally magnifying financial accelerator model of \textcite{bernanke89, bgg99} dominated. %However, the financial accelerator mechanism in DSGE models leads to locally magnifying effects only. As collateral values rise during an economic upswing, credit conditions improve as well. Eventually, as the economy enters an economic downturn, collateral values decrease and credit conditions are affected negatively.
+
+At the same time authors such as \textcite{aliber15} and \citeauthor{minsky82} (\citeyear{minsky82, minsky08}) stressed the instability of the financial system and the possibility of economic crisis. Theories of speculation, credit expansion and leverage, finally cumulating in financial distress and crisis `survived' outside standard macroeconomics for a long time.\footnote{Of course, the role of `overtrading' and its linkages with financial distress has already been formulated in the classical tradition as pointed out by \textcite{aliber15}.}
+These destabilizing effects of financial manias are nowadays even accounted for in more standard approaches; see for example \textcite{brunnermeier14}. Empirical evidence clearly suggests that the US economy is distinguished by two financial regimes, which may be described as a tranquil regime and a stress regime, as pointed out by \textcite{he14} and \textcite{mittnik13}.\footnote{Evidence on these strong non-linear effects of financial regimes are not confined to the US economy. These linkages can also be found for European economies as described in \textcite{mittnik13} and \textcite{schleer15}.}
+
+Non-linear linkages and financial regime switching are now firmly established in macroeconomic modelling. However, they are rarely accounted for in forecasting. In fact, forecasting with multivariate non-linear autoregressive models remains a neglected research area \parencite{hubrich13}: most studies focus on structural analysis with non-linear models, while only few researchers evaluate their forecasting performance. 
+
+The lack of forecasting studies with financial variables and non-linear models is not very surprising. Financial market indicators are often seen as too noisy, making signal extraction for macroeconomic forecasting difficult. Limited success of such a strategy is reported, for example, by \textcite{stock03}. Regarding forecasts based on non-linear models \textcite{ter06} observes that small sample sizes may affect non-linear models more strongly than linear models. As a result forecasts of non-linear models will be of low quality, even if the non-linear model is the more accurate description of the data generating process. This result is not surprising given the stronger parameterization of most non-linear models compared with linear models. Clearly this result constitutes a serious problem in macroeconomic research given the short to moderate sample size of most macroeconomic time series. Furthermore, problems of overfitting, the misclassification of observations, and the explanation of infrequent events may prohibit competitive forecasts by non-linear models. 
+
+Still, a small number of studies focusing on forecasting with multivariate non-linear models exists. Examples are given by \textcite{alessandri17} and \textcite{galvao06}, but results remain inconclusive. \textcite{galvao06} reports positive results on forecasting the 2001 recession based on a structural break threshold vector autoregression. On the other hand, \textcite{alessandri17} find that their threshold VAR ($TVAR$) only improves forecasts over the recession period following the Global Financial Crisis compared with a VAR. At the same time, a VAR with stochastic volatility improves forecasting performance over the entire sample period and would have been the preferred forecasting device at the beginning of the crisis.\footnote{It should be noted here that \textcite{galvao06} works with real time data while \textcite{alessandri17} do not.}
+
+%Although the studies by \textcite{galvao06} and \textcite{alessandri17} differ in research design and data coverage, similarities persist. Like most other studies using regime switching models -- see, for example, \textcite{balke00} and \textcite{hubrich15} -- they focus on some sort of financial stress indicator for distinguishing between regimes. %On the other hand, \textcite{aikman17} report that a `credit gap measure' outperforms a financial stress indicator in regime determination in their TVAR. 
+
+%work out diff between AM and me!
+From a methodological point of view this study is very closely related to the approach taken by \textcite{alessandri17}. I build on a Bayesian framework to compare forecasting performances of VARs, threshold VARs, and VARs with stochastic volatility. The prior distribution is based on the work of \textcite{banbura10}. I assess point forecasts for all three models for a forecast horizon up to ?? quarters. In addition, I take uncertainty of the forecasts into account as well by evaluating density forecasts.
+\textcolor{blue}{In contrast to \textcite{alessandri17} I build on quarterly data and larger models with up to 6 variables.} \textcite{banbura10} point out that conditioning on a larger dataset influences forecast performances and impulse response dynamics.
+
+My focus on VARs, TVARs and VARs with stochastic volatility is twofold. First of all, the choice of these three models is `natural' in the sense that a baseline model is needed. The baseline model is given by the VAR with a constant covariance matrix. The first contender model is given by the TVAR. The TVAR model takes the non-linear linkages discussed above explicitly into account. However, the threshold model is considerably more complex than the linear model and therefore more costly to deploy. %Rubin
+Thus for the TVAR to become a candidate for forecasting it has to `outperform' the VAR. This is not an easy task. It is well known in the forecasting literature that simple models work well and this result holds for VARs as well \parencite{karlsson13}.% How to evaluate forecasting performance based on the posterior predictive distribution %constitutes a decision problem and  will be discussed below. 
+The third model, the VAR with stochastic volatility, is chosen because time-varying volatility is seen as a pervasive feature of macroeconomic data for the US (see, for example, \cite{stock02}). 
+VARs with stochastic volatility have therefore been widely applied in structural analysis and forecasting and their excellent forecasting performance is documented by \textcite{alessandri17, clark15, rav14}. The VAR with stochastic volatility is therefore used as an even tougher competitor for the TVAR.
+
+\textcolor{blue}{Secondly, a focus on theses three models allows for a comparison with the results obtained in \textcite{alessandri17}. In contrast to their results, I show} \ldots %maybe also implications
+
+The remainder of the paper is organized as follows. The next section introduces the prior for the VAR parameters used for all three models. Section \ref{sec:models} discusses the three models, additional model specific priors and estimation strategy. Forecast evaluation metrics are introduced in Section \ref{sec:forecasts} and the dataset is discussed in Section \ref{sec:data}. The main results are presented in Section \ref{sec:results}. Finally, Section \ref{sec:conclusion} concludes. %\textcolor{blue}{Additional stuff in appendix \ldots}
+
+\section{Prior Choice}
+\label{sec:prior}
+
+I build on the prior for medium and large Bayesian VARs suggested by \textcite{banbura10}. They use a natural conjugate prior based on the Minnesota prior \parencite{doan84, litterman86}. The Minnesota prior represents a shrinkage prior to account for over-parameterization in VAR models, which can affect even small VARs with only a few variables. The autoregressive parameters are shrunk towards a random walk for persistent variables and towards white noise for non-persistent variables. The prior of \textcite{banbura10} controls for this shrinkage via a single scalar hyperparameter, $\lambda$. Setting this parameter is crucial and discussed in Section \ref{sec:results} in detail. In brief, a small VAR is estimated via OLS on a training sample and $\lambda$ is adjusted such that the in-sample fit of the forecasting model approaches the in-sample fit of the small VAR. 
+
+Before discussing the prior in detail it is instructive to describe the basic structure of a VAR. A VAR can be written as
+
+\begin{equation}
+Y = XB + E,
+\label{eq:var_intro}
+\end{equation}
+
+with $Y$ being a $T \times N$ matrix. The rows of matrix $Y$ represent $T$ observations of a time series vector, $Y'_t$, of size $N$. Matrix $X$ is the regressor matrix and is of dimension $T \times K$ with $K = N \times P + 1$ where $P$ is the lag length. Row $t$ of $X$ is given by $X_t = (Y'_{t-1}, \ldots, Y'_{t-P}, 1)$. Thus a constant is the only exogenous variable in the VAR considered here. Matrix $B$ represents the coefficient matrix of the VAR, $B = [B_1,\ldots,B_p,c]'$ with $B_i$ containing the autoregressive coefficients for lag $i$, and $c$ being the intercept. Finally, matrix $E$ is of size $T \times N$ and the residuals for period $t$ are given by $E_t$. In the most basic setting it is assumed that $E_t \sim \mathcal{N}(0, \Sigma)$. The covariance matrix is of dimension $N \times N$ and positive definite. The natural conjugate prior is normal-inverse Wishart with
+\begin{align}
+p(\beta|\Sigma) &\sim \mathcal{N}(\beta_0, \Sigma \otimes \Omega_0), \label{eq:var_prior1} \\
+p(\Sigma) &\sim \mathcal{IW}(S_0, a_0),
+\label{eq:var_prior2}
+\end{align}
+
+with $\beta = vec(B)$, $\beta_0 = vec(B_0)$ and $vec(\cdot)$ representing the vectorization operator. The prior hyperparameters $B_0, \Omega_0, S_0, a_0$ are data-based hyperparameters and set similar to \textcite{banbura10}. \textcite{koop13} points out that the natural conjugate prior can be integrated in the dataset as arsing from a fictitious sample of prior observations. Typically these observations reflect specific assumptions regarding the behavior of macroeconomic data to be discussed below. The dummy (or pseudo) observations are given by
+
+\begin{equation} 
+Y_d = 
+\begin{pmatrix} 
+\mbox{diag}(\delta_1 \sigma_1, \ldots, \delta_n \sigma_n) / \lambda \\
+0_{N(P - 1) \times N} \\
+\mbox{diag}(\sigma_1,\ldots,\sigma_N) \\
+0_{1 \times N}
+\end{pmatrix},
+\quad
+X_d = 
+\begin{pmatrix}
+J_p \otimes \mbox{diag}(\sigma_1,\ldots,\sigma_N) / \lambda && 0_{NP \times 1} \\
+0_{N \times NP} && 0_{N \times 1} \\
+0_{1 \times NP} && \varepsilon
+\end{pmatrix},
+\end{equation}
+
+with $J_p = \mbox{diag}(1,\ldots,P)$. Parameter $\delta_i$ is set equal to $0$ for non-persistent variables and equal to $1$ for persistent variables. Furthermore, $\sigma_i$ is equal to the standard deviation of the residuals of an $AR(P)$ regression for variable $i$. Lastly, $\varepsilon$ is set to $0.0001$, representing a diffuse prior on the constants.
+
+$Y_d$ and $X_d$ represent $T_d$ dummy observations which are appended to $Y$ and $X$ given in equation \eqref{eq:var_intro}. Adding these observations reflects implementing the priors described in equations \eqref{eq:var_prior1} and \eqref{eq:var_prior2} with $B_0 = (X'_dX_d)X'_dY_d$, $\Omega_0 = (X_d'X_d)^{-1}$, $S_0 = (Y_d - X_dB_0)'(Y_d - X_dB_0)$ and $\alpha_0 = T_d -K$.\footnote{See, for example \textcite{ricco18} for a derivation of this result.}
+
+Moreover, following \textcite{alessandri17} and \textcite{banbura10} I also impose additional priors on the sum of coefficients to improve forecasting performance.%\footnote{The sum of coefficient prior is also known as inexact differencing.}
+These additional dummy observations reflect the belief that most economic variables can be adequately represented by unit root processes with weak cross-sectional linkages, or, in case of variables in first differences, as white noise processes. The additional pseudo observations are given by:
+
+\begin{equation}
+Y_{dd} = \mbox{diag}(\delta_1\mu_1,\ldots,\delta_n\mu_n) / \tau, \qquad X_{dd} = ((1_{1 \times P}) \otimes  \mbox{diag}(\delta_1\mu_1,\ldots,\delta_n\mu_n) / \tau \quad 0_{N \times 1}).
+\label{prior:sum_coeff}
+\end{equation}
+
+Additional hyperparameters $\mu_i$ and $\tau$ are introduced in equation \eqref{prior:sum_coeff}. Hyperparameter $\tau$ represents another shrinkage parameter and is set to $\tau = 10 \lambda$ as in \textcite{banbura10}, implying that stronger shrinkage on the VAR parameters also leads to `more exact' differences on the lags. Parameters $\mu_i$ reflect the average value of variable $y_{i,t}$ and is set equal to the sample average of the variables. Finally, appending both sets of dummy observations to the observed data results in $Y^* = (Y', Y'_d, Y'_{dd})'$ and $X^* = (X', X'_d, X'_{dd})'$.
+
+Regarding the posterior distribution, I define $\tilde{B}$ as $\tilde{B} = (X^{*'}X^*)^{-1}X^{*'}Y^*$ and $\tilde{\Sigma} = (Y^* - X^*\tilde{B})'(Y^{*} - X^*\tilde{B})$. The posterior is then defined as
+
+\begin{align}
+p(\beta|\Sigma, Y) &\sim \mathcal{N}(vec(\tilde{B}), \Sigma \otimes (X^{*'}X^*)^{-1}), \label{eq:var_post_b} \\
+p(\Sigma|Y) &\sim \mathcal{IW}(\tilde{\Sigma}, T_d + T). \label{eq:var_post_cov}
+\end{align}
+
+
+In the context of this paper, using the dummy prior entails certain advantages and disadvantages; see \textcite{banbura10, koop13} for a more detailed discussion. A first advantage is given by the simple implementation of the prior. Appending the fictitious dataset given by the matrices $X_d, X_{dd}$ and $Y_d, Y_{dd}$ allows for efficient computation of the conditional posterior distribution $p(\beta|\Sigma, Y)$ and the marginal posterior of the covariance matrix $p(\Sigma|Y)$. 
+As can be seen from  equation \eqref{eq:var_post_b}, the expected value of the posterior is the OLS estimate on the appended dataset, while the covariance matrix of $p(\beta|\Sigma, Y)$ requires only the inversion of the $K \times K$ matrix $X^{*'}X^*$, while `standard' implementations of the Minnesota prior necessitate the inversion of a $NK \times NK$ matrix. 
+The advantage of inverting a smaller matrix can already be substantial in a relatively small model, given that the matrix has to be inverted in each Gibbs iteration for the TVAR.\footnote{\label{fn:analytic}In the case of \textcite{banbura10} the main advantage of using the dummy observation prior is that it allows for an analytical solution which does not rely on simulation methods. In addition, the marginal posterior of the autoregressive parameters, $B$, can be recovered without simulation methods and the predictive density for the one period ahead forecast is available in analytical form as well (see also \cite{koop13}). This won't be the case for the threshold VAR and the stochastic volatility model considered here. I therefore use simulation method for the VAR forecasts as well. Analytical results for the VAR are only used when finding the shrinkage parameter, $\lambda$, for the benchmark VAR.} 
+
+On the other hand, the dummy observation prior entails certain limitations \parencite{koop13}: while the original Minnesota prior allows for imposing additional shrinkage on lagged values of variable $j \neq i$ in the equation for variable $i$, the dummy observation prior sets only one shrinkage parameter for own lags and lags of other variables. In addition, as can be seen from equation \eqref{eq:var_prior2}, the prior variance of the coefficients on the same explanatory variable in any two equations will be proportional due to the Kronecker product.
+
+In the end, considerations concerning computation time dominate. As this study necessitates the estimation of ?? models I acknowledge the limitations of the dummy prior but nevertheless opt for it for gains in computational speed.
+
+\section{Forecasting Models}
+\label{sec:models}    
+
+\textcolor{blue}{As stated in the introduction, I use three multivariate time series models to forecast GDP, inflation growth rates, interest rates and the 10-year/2-year spread: a VAR, a threshold VAR and a VAR with stochastic volatility model.} All three models build on the dummy observation prior described in the last section. In this section I describe the implementation of the Gibbs sampling algorithms used in estimating the models.
+
+\subsection{VAR}
+\label{sec:VAR}
+
+Equation \eqref{eq:var} restates the VAR introduced above for a single observation, $t$, where $Y_t$ represents a $N \times 1$ vector containing the endogenous variables, $c$ is the constant and $P$ represents the lag length with $P = 4$ for all models. Matrix $B_i$ holds the autoregressive coefficients for lag $i$ and $\Sigma$ is the covariance matrix. 
+
+\begin{equation}
+Y_t = c + \sum_{i=1}^P B_i Y_{t-i} + v_t, \quad v_t \sim \mathcal{N}(0,\Sigma). 
+\label{eq:var}
+\end{equation}
+
+As discussed in Section \ref{sec:prior} the posterior of model \eqref{eq:var} can be recovered analytically and the same holds for the one-step ahead forecast. This result won't hold for the TVAR and the stochastic volatility VAR where simulation methods for posterior distribution and forecasts have to be used. Therefore, I use simulation methods for the forecasts of the VAR as well. After evaluating $\tilde{B}$, $(X^{*'}X^*)^{-1}$ and $T_d + T$ for a given sample, values for $\beta$ and $\Sigma$ are drawn via Gibbs sampling. The Gibbs sampler has been implemented such that unstable draws for the VAR are rejected. This is accomplished by building the companion matrix of the autoregressive coefficients for a $\beta$ sample and evaluating its eigenvalues \parencite[page 15f]{lpl05}.
+
+A draw for $B$ is stable if the modulus of the largest eigenvalue of the companion matrix is smaller than one.\footnote{This is implemented in the code by allowing for up to 10,000 drawing attempts of the coefficients. If stability is not accomplished after 10,000 draws the last stable $B$ draw is retained and forecasts are not evaluated. In general, allowing stable draws only is not an uncontroversial issue, especially in structural analysis; see \textcite{cogley05} for more details. I regard unstable draws -- leading to explosive behavior -- as irrelevant in a forecasting scenario. Therefore I disregard them.}
+The Gibbs sampler starts with a random draw for $\Sigma$ drawn from the posterior distribution given by equation \eqref{eq:var_post_cov} and samples in turn from $p(B^m|\Sigma^{m-1})$ and $p(\Sigma^m|B^m)$ for $m = 1,\ldots,M$ with $M$ being the number of replications.\footnote{More details on the settings of the Gibbs sampler are provided in Section \ref{sec:results}.} 
+
+After the burn-in phase is completed, forecasts of the VAR are simulated for a given sample for $B$ and $\Sigma$ by forward iteration starting from the last observed values. Point and density forecasts and their evaluation -- discussed in the next section -- are based on these recursive forecasts. 
+The predictive distribution, $p(Y_{t+k}|Y_t)$, is given by
+
+\begin{equation}
+p(Y_{t+k} | Y_t) = \int\int p(Y_{t+k}, B, \Sigma | Y_t) dB d\Sigma = \int\int p(Y_{t+k}|Y_t, B, \Sigma) p(B|Y_t, \Sigma) p(\Sigma | Y_t) dB d\Sigma,
+\label{eq:pred_dens}
+\end{equation} 
+
+\textcolor{blue}{with $p(B|Y_t, \Sigma) p(\Sigma | Y_t)$ being the conditional posterior distribution.} The predictive distribution can therefore be recovered from the saved Gibbs draws for $h=1,\ldots,4$ with $h$ being the forecast horizon.
+
+\subsection{Threshold VAR}
+\label{sec:tar}
+
+The \textit{threshold VAR (TVAR)} with two regimes is given by
+
+\begin{equation}
+Y_t =
+\begin{cases}
+c_1 + \sum_{i=1}^P B_{1,i} Y_{t-i} + v_{1,t} = X_1B_1 + v_{1,t}  \quad \mbox{if} \quad z_{t-d} \leq z^*, \\
+c_2 + \sum_{i=1}^P B_{2,i} Y_{t-i} + v_{2,t} = X_2B_2 + v_{2,t} \quad \mbox{if} \quad z_{t-d} > z^*,
+\end{cases}
+\label{eq:TVAR}
+\end{equation}
+
+with $c_1$ and $B_{1,i}$ being the coefficients of the first regime and $c_2$ and $B_{2,i}$ representing the coefficients of the second regime. The model allows for changes in dynamic behavior and shock transmission. Variable $z_{t-d}$ is an endogenous variable, belonging to vector $Y_{t-d}$. In the model employed here $z_{t-d}$ is given by the 10-year/2-year treasury spread, as discussed in Section \ref{sec:data}. Parameter $d$ represents the delay parameters which will be estimated via the Gibbs sampling approach described below. The threshold value, $z^*$, is estimated as well. I use a flat prior over $1,\ldots,max_d$ for the delay parameter with $max_d = P$. A rather non-informative normal prior, $\mathcal{N}(\bar{z}, 10)$, is employed for the threshold value with $\bar{z}$ being the sample mean of the threshold variable for a given sample. Furthermore, $v_{1,t} \sim \mathcal{N}(0, \Sigma_1)$ and $v_{2,t} \sim \mathcal{N}(0, \Sigma_2)$ such that the TVAR allows for changes in volatility between the regimes as well. Matrices $B_1$ and $B_2$ are the coefficient matrices and matrices $X_1$ and $X_2$ are the regressors, as before.  
+
+I focus on a threshold model with two regimes for two reasons. Foremost, there is ample evidence of two financial regimes in the US macroeconomy as already mentioned in the introduction. In addition, focusing on a TVAR with only two regimes reduces complexity of the estimation procedure. \textcite{chen95} show for the univariate threshold model that a Metropolis-within-Gibbs algorithm allows for estimating all parameters of interest in a straightforward way (see also \cite{alessandri17}). Below, $p(\Phi|\Xi)$ denotes the full conditional posterior distribution for parameter $\Phi$ conditional on all the other parameters of the model. The Gibbs sampling procedure works as follows:
+
+%DOES n_crit change the sampler because I reject samples beforehand? should I mention it in here?
+\begin{enumerate}
+\item starting values are initialized for $d$ and $z^*$. For $d$ a random starting value between 1 and $max_d$ is chosen. Defining $d$ also implies choosing a random starting vector $z_{t-d}$. From the random starting vector, $z_{t-d}$, a random starting value for $z^*$ is chosen such that both regimes hold at least $K$ observations. In doing so, I split the sample in two starting regimes with $Y_1$ containing all $Y_t$ vectors with the corresponding $z_{t-d}$ being smaller or equal to $z^*$. The corresponding right-hand side variable for $Y_1$ are collected in matrix $X_1$ where the time series structure of the observations is maintained. In a similar way, $Y_2$ and $X_2$ collect the left hand side and right-hand side observations for $z_{t-d} > z^*$. 
+\item Given $Y_1, X_1$ and $Y_2, X_2$ the model becomes linear in the two regimes and the dummy prior observations from Section \ref{sec:prior} are appended to both regimes. As pointed out by \textcite{alessandri17}, using the same prior structure in both regimes might seem counter-intuitive, but given the strong parameterization of the TVAR model shrinkage is crucial. Furthermore, the dummy prior does not impose strong beliefs on the distinct dynamics of the model which leads to data determined behavior in the two regimes.
+\item After estimating the $B$ matrices for both regimes via a simple OLS regression on the appended dataset, I draw starting value for $\Sigma_1$ and $\Sigma_2$ based on equation \eqref{eq:var_post_cov} with $\tilde{S}_1$ and $\tilde{S}_2$ being the sum of squared residuals of the two linear models described before. The degrees of freedom for the inverse Wishart distributions are given by $T_d + T_1$ for the first regime and $T_d + T_2$ for the second regime. Drawing starting values for $\Sigma_1$ and $\Sigma_2$ is repeated until positive definite matrices are obtained. Based on these starting values the Gibbs sampler is started.
+\item \textbf{Drawing $p(B_1|\Xi), p(\Sigma_1|\Xi), p(B_2|\Xi), p(\Sigma_2|\Xi)$ in turn:} observations are split up into the two regimes and arranged in $Y_1, X_1, Y_2, X_2$. The dummy observations are appended for both regimes. Then $B_1$ and $B_2$ are drawn the same way as in the VAR, including the test for stability. The same holds for the  $\Sigma_1$ and $\Sigma_2$ samples; they are drawn in the same way as in the linear model with the degrees of freedom adjusting for the number of observations in each regime.
+\item \textbf{Drawing $p(z^*|\Xi)$:} the threshold value is drawn via an random walk Metropolis step within the Gibbs sampler. The candidate value, $z_{c}$, is drawn as $z_{c} \sim \mathcal{N}(z^*, \psi_1)$ with $\psi_1$ being the scale parameter. Tuning $\psi_1$ is accomplished via a \textit{Delayed Rejection Adaptive Metropolis (DRAM)} step \parencite{haario06} where I impose again the restriction that at least $K$ observations have to be in each regime. To the best of my knowledge this procedure has not been applied for the TVAR model so far, but it was tested and worked well during estimation.  DRAM is the combination of a \textit{Delayed Rejection} (DR; \cite{mira01}) step with an \textit{adaptive Metropolis} (AM; \cite{haario01}) adjustment. 
+
+In AM $\psi_1$ is adapted during the MCMC procedure to find an optimal acceptance rate for the Metropolis step. Starting from an initial value of $0.001$, the scale parameter is adapted according to  $\psi_1 = (\mbox{Cov(chain}_{\psi_1,1:i}) + \delta_{AM})s$ with a periodicity (adaptation frequency) of 50, starting at iteration 100. Thus, $\psi_1$ depends on the covariance of the chain and parameter $\delta_{AM}$ which is set to a small number, $1e-8$, to prevent $\psi_1$ from becoming zero. Finally, parameter $s$ represents the scaling factor and is given by $s = 2.4^2$.%, informed by a standard optimal choice rule. 
+ Although the adaption procedure tunes $\psi_1$ well, it has to be noted here that it destroys the Markovian property of the chain.\footnote{Ergodicity of the chain, on the other hand, is maintained by the AM step.} The AM step is therefore `turned off' before the burn-in phase is completed. I use the (arbitrary) rule that adaptation ends as soon as the iteration number exceeds $min(\mbox{replications} \times 0.75, \mbox{burn-in} \times 0.95)$. 
+
+The $DR$ procedure, on the other hand, starts immediately with the first iteration. It is activated as soon as a candidate value is rejected. Instead of advancing with the next iteration and retaining the old position, a second candidate is proposed. Its visiting distribution is given by the tighter distribution $\mathcal{N}(z^*, \psi_2)$ with $\psi_2 = \psi_1 / 3$. Using the DR step has the advantage of an asymptotically more efficient chain than a straightforward Metropolis-Hastings chain \parencite{mira01}. However, the acceptance probability has to be adapted for the second proposal such that reversibility of Markov chain is not destroyed. In general, it is possible to draw more than one additional candidate value in case the second proposal is rejected as well. To keep the sampling procedure relatively simple I only work with one $DR$ step which results in one (in case the first value is already accepted) or two proposals in each iteration. The first $DR$ step follows the standard acceptance rule for a random walk Metropolis algorithm, $\alpha_1(z^*, z_c) = min(1, p(z_c|\Xi, Y) / p(z^*|\Xi,Y))$ with $p(z_c| \Xi, Y)$  being the posterior based on the candidate and  $p(z^*|\Xi,Y)$ representing the posterior based on $z^*$. The second $DR$ step, if activated, computes the new acceptance probability for candidate $z_{cc}$ as 
+
+\begin{align}
+\alpha_2(z^*, z_c, z_{cc}) &= min(1, w_1 / w_2), \label{eq:DR} \\
+w_1 &= p(z_{cc}| \Xi, Y) \times q_1(z_{cc}, z_c) \times q_2(z_{cc}, z_{c}, z^*) \times [1 - \alpha_1(z_{cc}, z_c)], \notag \\
+w_2 &= p(z^*| \Xi,Y) \times q_1(z^*, z_c) \times q_2(z^*, z_{c}, z_{cc}) \times [1 - \alpha_1(z^*, z_c)] \notag.
+\end{align}
+
+Here $q_1(x, y)$ represents drawing $y$ when the current position is given by $x$ under $\mathcal{N}(x, \psi_1)$, while $q_2(x, y, z)$ represents drawing $y$ followed by $z$ when the current position is given by $x$ under $\mathcal{N}(x, \psi_2)$ and then $N(y, \psi_2)$.\footnote{Note that equation \eqref{eq:DR} simplifies substantially here because I am working with a Gaussian random walk visiting distribution. Consequently the $q_2(\cdot,\cdot,\cdot)$ terms in $w_1$ and $w_2$ simplify and cancel out eventually.}
+It is important to note here that the DR step retains the Markovian property and reversibility of the chain. Thus, there is no need of `turning it off' after the burn-in phase. 
+\item \textbf{Drawing $p(d|\Xi)$:} given a flat prior on $d$, the conditional posterior for $d$ follows a multinomial distribution with probability $\mathcal{L}(Y | d_i, \Xi) / \sum_{j=1}^{max_d} \mathcal{L}(Y | d_j, \Xi)$ for $d_i$, where $\mathcal{L}(\cdot)$ is the likelihood function.
+\end{enumerate}    
+
+Finally, forecasts are simulated recursively as in Section \ref{sec:VAR}. Here I have to integrate out $B_1, B_2, \Sigma_1, \Sigma_2, z^*$ and $d$. The simulation procedure therefore becomes slightly more involved as I have to account for draws of $z^*, d$ and regime switches during forecasts.
+
+\subsection{VAR with Stochastic Volatility}
+\label{sec:SVOL}
+
+The \textit{VAR with stochastic volatility (SVOL)} can be written as:
+
+\begin{align}
+\begin{split}
+Y_t &= c + \sum_{i=1}^P B_i Y_{t-i} + v_t = XB + v_t, \\
+v_t &= A^{-1} H_t^{1/2} \epsilon_t, \quad \epsilon_t \sim \mathcal{N}(0, I), \\
+H_t &= \mbox{diag}(h_{1,t},\ldots,h_{N,t}), \\
+log(h_{i,t}) &= log(h_{i,t-1}) + u_{i,t}, \quad u_{i,t} \sim \mathcal{N}(0, g_i).
+\end{split}
+\label{eq:svol}
+\end{align}
+
+The first equation is system \eqref{eq:svol} represents the linear autoregressive structure with $B$ once again collecting the intercept and autoregressive coefficients and $X$ containing all regressors. The second equation depicts the time-varying covariance structure. The covariance matrix is implicitly given by $\Sigma_t = A^{-1}H_tA^{-1'}$ with $A$ being lower triangular, constant, and with ones on the diagonal. The elements of $A$ below the diagonal are referred to as the `free elements' of $A$. As can be seen from the third equation in system \eqref{eq:svol}, $H_t$ is diagonal and time-varying. The last equation represents the stochastic volatility process for the orthogonal errors. The logarithm of the squared volatility terms follow a random walk.
+
+%As discussed above I use the priors suggested by \textcite{banbura10}. Here they are used to find starting values for the Kalman filter which is used for drawing $B$. 
+Additional priors are needed for the free elements of $A$ and the variances of the stochastic volatility processes, $g_i$. Following \textcite{alessandri17} I use uninformative priors for both of them:
+
+\begin{align*}
+p(a_{ij}) &\sim \mathcal{N}(0, 1000) \quad \mbox{for} \ i > j,\\
+p(g_i) &\sim \mathcal{IG}(1, 0.0001) \quad \mbox{for} \ i=1,\ldots,N,
+\end{align*}
+
+%ANOTHER LOOK AT POSTERIOR FOR G: notation
+with $a_{ij}$ being the free elements of $A$. Moreover, $\mathcal{IG}(\alpha_{IG}, \beta_{IG})$ is the inverse-gamma distribution with shape parameter $\alpha_{IG}$ %(degrees of freedom) 
+and scale parameter $\beta_{IG}$. %The prior for the $g_i$ terms has one degree of freedom and scale equal to $0.0001$. 
+Lastly, the $h_{i,t}$ terms are drawn via the independence Metropolis-Hastings algorithm presented in \textcite{jac94}. The algorithm is designed for an univariate series, $h = (h_1, \ldots, h_T)'$, and draws one stochastic volatility term at a time (single-move algorithm). \textcite{jac94} show that the draw for period $t$ depends on draws from period $t-1$ and $t+1$. Thus a starting value, $h_0$, is needed for drawing $h_1$, while $h_T$ only depends on $h_{T-1}$. The prior for $h_0$ is given by $log\ h_0 \sim \mathcal{N}(\mu_h, \sigma^2_h)$. The mean of the distribution, $\mu_h$ is set equal to the log of the variance of an $AR(1)$ regression on a training sample of size ??. The training sample is excluded from the Gibbs sampler. Given the uncertainty concerning the stochastic volatility terms, $\sigma^2_h$ is set equal to 100 to form an uniformative prior. %Obtaining values for $\mu_h$ and $\sigma^2_h$ is described below and 
+The posterior distribution for $h_1,\ldots,h_T$ can be found in \textcite{jac94}. 
+
+\textcite{cogley05} describe a Metropolis-within-Gibbs algorithm which allows for estimating the model. %Below, $p(\Phi|\Xi)$ denotes the full conditional posterior distribution for parameter $\Phi$ conditional on all the other parameters of the model. 
+The sampling procedure for the VAR with stochastic volatility works as follows:
+
+\begin{enumerate}
+\item obtain starting values for the Kalman filter: %(step \ref{item:kalman}): 
+starting values for the mean of $B$, $b_{00}$, are obtained by a linear regression of the dummy observations $Y_d$ on $X_d$. The starting value for the variance of $B$, $p_{00}$ is set to $p_{00} = \Sigma_d \otimes (X_d'X_d)^{-1}$ with $\Sigma_d$ being a diagonal matrix with the covariances of the residuals from the dummy $AR(P)$ model on the diagonal. %After obtaining the starting values for the Kalman filter, the training sample is removed from the dataset.  
+\item Starting values for the VAR residuals are obtained by a VAR estimated via OLS after removing a training sample of size ?? which will be used in the next step. %Starting values for $u_{i,t}$ are set as $u_{i,t} = Y_t - Y_{t-1}$. 
+Starting values for $h_{i,t}, i = 1,\ldots N,\ t = 0,\ldots, T$ are set equal to the first difference of $Y$ squared. Two additional values are added to adjust for size differences and a small value, $\varepsilon = 0.0001$, is added to each observation. This is done to avoid zero values for the stochastic volatility terms which would cause problems for the sampling algorithm.
+\item \textbf{Drawing $p(g_i|\Xi)$:} given the prior distribution described above, they are distributed as $IG((u_{i,t}'u_{i,t} + 0.0001)/2, (T + 1)/2)$ with $u_{i,t}$ being the residuals from the stochastic volatility process: $u_{i,t} = log(h_{i,t}) - log(h_{i,t-1})$.
+\item \textbf{Drawing $p(a_{ij}|\Xi)$:} defining  $Av_t = e_t$ results in $e_t \sim \mathcal{N}(0, H_t)$ by definition. Rearranging yields $N - 1$ linear regressions of the form
+
+\begin{equation}
+v_{i,t} = - \sum_{j=1}^{i-1} a_{i,j} v_{j,t} + e_{i,t} \mbox{ for } i=2,\ldots,N.
+\end{equation}
+
+These equations exhibit a known form of heteroskedasticity which is given by the last draw of $h_{i,t}$ available from the Gibbs sampler. Heteroskedasticity can be removed by dividing equation $i$ by $\sqrt{h_{i,t}}$ which yields $\tilde{v}_{i,t} = v_{i,t} / \sqrt{h_{i,t}}$ and $\tilde{v}_{-i,t} = \sum_{j=1}^{i-1} v_{j,t} / \sqrt{h_{i,t}}$. Now a linear regression with homoscedastic errors, $ e_{i,t} \sim \mathcal{N}(0, 1)$, can be estimated. Given the prior on the free elements described above, this allows for drawing posterior values for the terms below the diagonal of $A$: 
+
+\begin{align}
+\begin{split}
+a_{i,j} &\sim \mathcal{N}(M^*, V^*), \\
+V^* &= (\mbox{diag}(1 / 1000) + \tilde{v}_{-i,t}'\tilde{v}_{-i,t})^{-1}, \\ 
+M^* &= V^*(\tilde{v}_{-i,t}'\tilde{v}_{i,t}).
+\end{split}
+\end{align}
+
+\item \textbf{Drawing $p(B|\Xi)$}: given a time-varying covariance matrix, drawing $B$ is done via the Kalman filter with $p(B|\Xi,Y) \sim \mathcal{N}(B_{T|T}, P_{T|T})$. Period $T$ stands for the last iteration of the Kalman filter. The implementation of the Kalman filter builds on a state-space model with a time-varying variance in the observation equation, $\Sigma_t$, but a transition equation without an error term ($B$ is assumed to be time-invariant). As in Section \ref{sec:VAR} I test for stability of the draw via the eigenvalues of the companion matrix. In a last step the errors, $v_t$, are computed based on the last accepted draw of $B$. \label{item:kalman}
+\item \textbf{Drawing $p(h_{i,t}|\Xi)$:} Using the current draw for $A$ and $v_t$, I recalculate $e_t = Av_t$. As already mentioned above, $v_t \sim \mathcal{N}(0, H_t)$, with $H_t$ being diagonal. This implies that the $e_t$ is contemporaneously uncorrelated and each element of $e_t,\ e_{i,t}$, can be written as $e_{i,t} = \xi_t \sqrt{h_{i,t}}$ with $\xi_t \sim \mathcal{N}(0, 1)$. Thus the algorithm of \textcite{jac94} can be applied for each $e_{i,t}$ to obtain estimates for the stochastic volatility terms. 
+\end{enumerate}
+
+Forecasting with the stochastic volatility VAR is similar to forecasting with the VAR of Section \ref{sec:VAR}. Taking another look at equation \eqref{eq:pred_dens}, it is easy to see that I only have to to account for the additional parameters -- given by the variance of the stochastic volatility process and the free elements of $A$ -- and the latent states, $h$. All other steps remain unchanged. %account for all unobservables: parameters and pssible latent variables (KASTNER)
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    Forecast Evaluation
+
+\section{Forecast Evaluation Metrics}
+\label{sec:forecasts}
+
+Following, amongst others, \textcite{alessandri17} and \textcite{koop13} I evaluate point forecasts as well as density forecasts for my out-of-sample test set. \textcite{weiss96} points out that for a forecaster with a quadratic loss function the mean square error ($MSE$) is the appropriate measure for model choice. The average root mean square error, $RMSE$, for model $m$ with $m=\{\mbox{VAR, TVAR, SVOL}\}$, variable $i$ and forecast horizon $h$ is defined as:
+
+\begin{equation}
+RMSE^m_{i,h} = \frac{1}{T_1 - H - T_0 + 1} \sum_{t = T_0 + H - h}^{T_1 - h} \sqrt{(y_{i,t}^{obs} - \bar{y}_{i,t}^m)^2},  
+\label{eq:MSE}
+\end{equation}
+
+where $y_{i,t}^{obs}$ represents the observed value and $\bar{y}_{i,t}^m$ is the posterior predictive mean. Furthermore, $H$ stands for the maximum forecast horizon, $H = 4$. $T_0$ represents the starting point of the first forecast for forecast horizon $h = H$ and $T_1$ is the sample endpoint.  Equation \eqref{eq:MSE} guarantees that all forecasts start in the same time period, $T_0 + H$ and end in $T_1$.
+
+However, the the Gibbs samplers of Section \ref{sec:models} do not only provide point estimates. They also produce predictive samples. These samples can be used for evaluating predicitve distributions based on equation \eqref{eq:pred_dens}. \textcite{gbr07} argue that probabilistic forecasts, that is forecasts based on a full probability distributions over future events, should aim for maximizing the \textit{sharpness} of the predictive distribution subject to \textit{calibration}. Calibration demands that observations should be indistinguishable from a random sample from the predictive distribution, while sharpness describes the concentration of the forecasts. A sharper predictive distribution is preferred.
+
+%scoring rules: comparative forecast evaluation; *absolute* forecast eval: diagnostics -> PIT
+Various approaches for evaluating calibration and sharpness of predictive distributions exist. Here I focus on foreacast comparison via \textit{scoring rules} which assess calibration and sharpness simultaneously in such a setting. A scoring rule assigns a numerical penalty based on the forecast distribution and the observed value which allows for ranking competing forecasts \parencite{gneiting07, gneiting14}.
+%Proper scoring rule is designed such that quoting the true distribution as the forecast distribution is optimal strategy in expectation (Gneiting and Katfuss)
+
+%As suggested by the literature, I rank competing forecasts by the mean score over the ``8x'' test cases available in my dataset.
+I focus on two proper\footnote{A scoring rule is prober if reporting the true distribution as the forecasting distribution constiutes the optimal strategy in expectation \parencite{gneiting14}. That is, if observation $y \sim \mathcal{G}$, then a proper scoring rule will always have the property $\mathds{E}_{Y \sim \mathcal{G}} S(\mathcal{G}, Y) \leq \mathds{E}_{Y \sim \mathcal{G}} S(\mathcal{F}, Y)$ for all $\mathcal{F}, \mathcal{G}$. The scoring rule is \textit{strictly proper} if and only if the the equality only holds for $\mathcal{F}=\mathcal{G}$.} score scoring rules here. The most commonly used scoring rule is given by the \textit{Logarithmic Score} ($LogS$; \cite{good52}). Equation \eqref{eq:log_score} defines the average logarithmic score for a given sample running from $T_0 + H$ until $T_1$:
+
+\begin{equation}
+LogS(f^m_{i,h}) = - \frac{1}{T_1 - H - T_0 + 1} \sum_{t = T_0 + H - h}^{T_1 - h} log f^m_{i,h}(y_{i,t}^{obs}),
+\label{eq:log_score}
+\end{equation}
+
+where $f^m_{i,h}$ denotes the predictive density for variable $i$, model $m$, and forecast horizon $h$. Note that $LogS$ is defined as the negative log likelihood. It is therefore negatively oriented and constitutes a penalty term as demanded above.
+%This is mainly done to facilitate comparison with the \textit{continuous ranked probability score (CRPS)}, which is negatively oriented as well. 
+In my case the predictive density for computing the logarithmic score is only given indirectly via the MCMC samples of the three models. Thus I use kernel density estimation to approximate the predictive densities for each model. The density estimates, $\hat{f}^m_{i,h}$, are based on a Gaussian kernel with the rule-of-thumb bandwidth selection used in \textcite{silverman86}, given by $h_{bw} = 1.06 \hat{\sigma}_{\mathcal{M}}\mathcal{M}^{-1/5}$ with $\mathcal{M}$ representing the number of forecast samples and $\hat{\sigma}_{\mathcal{M}}$ being the standard deviation of a given MCMC forecast sample.
+
+However, density forecast evaluation via $LogS$ has been criticized for being too sensitive to extreme events \parencite{gneiting07}. In case of MCMC output and kernel density estimation the score can become highly sensitive to bandwith choice if the observed value falls in the tail of the simulated forecast distribution \parencite{krueger19}.
+ Instead, these studies argue in favor of the  \textit{Continuous Ranked Probability Score} ($CRPS$; \cite{matheson76}) in evaluating density forecasts which rewards predictive distributions with mass concentrated around the outcome (`sensitivity to distance'; see also \cite{clark15}).\footnote{On the other hand, some authors argue in favor of the logarithmic score due its `locality' property. A local scoring rule only pays attention to the density value of a realized outcome. Ultimately the choice between locality and sensitivity to distance is subjective. However, the problem of density estimation remains.} 
+%\textcolor{blue}{In addition, the CRPS is consistent under minimal conditions. It only demands that the process $(\phi_i)_{i=1,2,\ldots}$ is stationary and ergodic with invariant distribution $p(\Xi|Y)$ which also implies that draws $(y_{i,t}^m)_{i=1,2,\ldots}$ are stationary and ergodic with an invariant posterior CDF. The CRPS will then be consistent for every distribution with finite mean.\footnote{See \textcite{krueger19} for a proof of this result. They define consistency based on the idea that as the simulation size increases, the approximation of the forecast distribution relative to the scoring rule should perform as well as the unknown true forecast distribution. Their simulation study shows that logarithmic scores based on kernel density estimation lead to highly variable results between replications, even for large sample sizes.}} 
+The average CRPS is defined as:
+
+\begin{align}
+\begin{split}
+CRPS(F^m_{i,h}, y_{i,h}^{obs}) &= \frac{1}{T_1 - H - T_0 + 1} \sum_{t = T_0 + H - h}^{T_1 - h} \int_{- \infty}^\infty \left(F^m_{i,h}(z) - \mathds{1}\{y_{i,h}^{obs} \leq z\} \right)^2 dz \\
+&=  \frac{1}{T_1 - H - T_0 + 1} \sum_{t = T_0 + H - h}^{T_1 - h} \mathds{E}_F | y_{i,t}^m - y_{i,h}^{obs}| - \frac{1}{2} \mathds{E}_{FF} | y_{i,t}^m - y_{i,t}^{m,2}|
+\label{eq:crps}
+\end{split}
+\end{align}
+
+%second equality only holds if F() has finite first moments
+with $\mathds{1}\{\cdot\}$ being the indicator function and $F(\cdot)$ representing the predictive CDF. Furthermore, $y_{i,t}^m$ and $y_{i,t}^{m,2}$ represent two independent draws from the posterior predictive distribution. As can be seen from the first line of equation \eqref{eq:crps}, the CRPS measures the area between predicted and the realized cumulative distribution (see also \cite{rav14}) and is negatively oriented. The alternative formulation of the CRPS, in the second line of equation \eqref{eq:crps} -- due to \textcite{gneiting07} -- allows for a straightforward application of the CRPS for a simulated sample as shown in equation \eqref{eq:crps_emp}.  %Again, I have to approximate the predictive distribution based on the MCMC samples. This is easily done by the empirical CDF (ECDF). 
+The CRPS based on the ECDF is implemented efficiently\footnote{The implementation is efficient in the sense that its computational complexity is $\mathcal{O}(\mathcal{M}\log{}\mathcal{M})$ while a more straightforward implementation of equation \eqref{eq:crps} would result in a $\mathcal{O}(\mathcal{M}^2)$ algorithm; see \textcite{krueger19} for more details.} for a single observation as:
+
+\begin{equation}
+CRPS(\hat{F}^{\mathcal{M}}_{i,h},  y^{obs}) =  \frac{2}{\mathcal{M}^2} \sum_{i=1}^{\mathcal{M}} \left( Y_{(i)} - y^{obs} \right)
+\left(\mathcal{M} \mathds{1}\{y^{obs} \leq Y_{(i)} \} - i + \frac{1}{2} \right)
+\label{eq:crps_emp}
+\end{equation}
+
+with $Y_{(1)},\ldots,Y_{(\mathcal{M})}$ representing the order statistic for $y_{i,T_0+H-h}^{m},\ldots,y_{i,T_1-h}^{m}$. The $CRPS$, like $LogS$, can be generalized for multivariate observations. Here I only consider the multivariate extension of the CRPS, the \textit{Energy Score (ES)} as described in \textcite{gneiting08}. I do not include multivariate logarithmic scores here due to the density estimation problems described above and the `curse of dimensionality' of multivariate density estimation. The implementation of the ES for a \textit{single} observation is given by:
+%curse of dim for 2 dim!?
+%which are likely to be exacerbated in a multivariate setting
+
+\begin{equation}
+ES(\hat{F}^{\mathcal{M}}_{i,h},  y^{obs}) = \frac{1}{\mathcal{M}} \sum_{i=1}^{\mathcal{M}} \| \mathbf{Y_i} - \mathbf{y^{obs}} \| - \frac{1}{2\mathcal{M}^2} \sum_{i=1}^{\mathcal{M}} \sum_{j=1}^{\mathcal{M}}  \| \mathbf{Y_i} - \mathbf{Y_j} \|
+\end{equation}
+
+with $\mathbf{y^{obs}}$ and $\mathbf{Y_i}$ now being $d$ dimensional vectors and $\| \cdot \|$ representing the Euclidean norm. Again, the average value over all samples will be used for forecast evaluation.
+
+\section{Data}
+\label{sec:data}
+
+I estimate all three models based on two datasets. The data was retrieved from the FED St. Louis through \textit{FRED}.\footnote{\url{https://fred.stlouisfed.org/}} I use quarterly data as forecasts from quarterly data tend to be smoother than forecasts from monthly data, which should accommodate the shrinkage prior modelling strategy. Data at a higher frequency is transformed into quarterly data by calculating averages. The data starts in the first quarter of 1976 and runs until the second quarter of 2019 resulting in 173 observations in total.
+
+The first dataset consists of real GDP, the consumer price index (CPI), the Federal Funds rate, and the spread between 10-year treasury constant maturity and 2-year treasury constant maturity. The interest spread is included in all models and also acts as the threshold variable in the TVAR. As already mentioned in the introduction, interest spreads are commonly used in regime switching models as threshold variables as they allow for distinguishing between high stress and low stress financial regimes. Most of these studies investigate impulse responses based on these regimes and show differences in dynamic behavior of the economy.
+
+The second dataset extends the first one by adding two additional variables, real personal consumption expenditures (PCE) and the \textit{Chicago Fed National Financial Conditions Index} (NFCI). The NFCI measures financial conditions in money markets, debt and equity markets. It takes traditional and ``shadow'' banking systems into account. \textcite{brave12} show that the NFCI is an accurate leading indicator for financial stress. However, I use the NFCI here only as one of the six endogenous variables while the spread variable remains the threshold variable.
+The NFCI is included to account for `other' financial factors\footnote{Note that the spread between 10-year treasury constant maturity and 2-year treasury constant maturity is included in the NFCI is a risk factor. The NFCI uses information of 105 financial variables.} and effectively transforms the models of Section \ref{sec:models} into factor models as pointed out by \textcite{alessandri17}. The data is plotted in Figure \ref{fig:data}. NBER recession dates as added as grey shaded areas. As can be seen real GDP, CPI, and PCE enter the models in annualized growth rates.
+
+\section{Results}
+\label{sec:results}
+
+All estimates are obtained by recursive estimation over an expanding data window. Forecasts at horizons greater than one quarter are obtained recursively.
+
+As discussed in Section \ref{sec:prior}, setting the shrinkage parameter at an appropriate level is crucial for obtaining reliable forecasts. I follow the standard approach of \textcite{banbura10} here and adjust $\lambda$ such that its in-sample fit over the training sample running from ?? through ?? matches the in-sample fit of a small scale VAR estimated by OLS. The small scale VAR only uses data of the three `main variables', GDP, inflation, and the Federal Funds rate. The fit of the Bayesian VAR for hyper-parameter $\lambda$ is then defined as
+
+\begin{equation}
+Fit_{\lambda} = \frac{1}{3}\sum_{i=1}^3 \frac{MSE_i^\lambda}{MSE_i^0},
+\end{equation}
+
+with $i$ representing the three main variables and $MSE_i^\lambda$ being the in-sample one step ahead mean squared forecast error for the VAR. $MSE_i^0$ is used as a normalizing constant and represents the in-sample one step ahead mean squared forecast error of the prior. The fit for the OLS VAR, $Fit_{OLS}$ is evaluated the same way. Finally, to achieve a similar in sample fit for the Bayesian VAR and the small-scale OLS VAR, $\lambda$ is chosen such that the absolute distance between $Fit_{OLS}$ and $Fit_{\lambda}$ is minimized. The optimization procedure follows a simple grid search over the interval between 0.01 and 1 with a step size of 0.01. Note that this results in the estimation of 99 Bayesian VARs to find $\lambda$. Implementation cost of this procedure is limited as a closed-form solution for the Bayesian VAR exists which is applied here.
+
+The optimized value for the hyper-parameter, $\lambda_{VAR}$ is used for the VAR and VAR with stochastic volatility. However, for the $TVAR$ a different value for $\lambda$ is chosen.\footnote{I tried using the same $\lambda$ value for all three models and using a distinct $\lambda$ for the stochastic volatility VAR as well. However, the best results were obtained by using $\lambda_{VAR}$ for the VAR and the stochastic volatility VAR and a distinct $\lambda_{TVAR}$ for the TVAR.} Hyper-parameter $\lambda_{TVAR}$ is also found by a grid search. However, no closed-form solution exists for the TVAR. Therefore a smaller grid between ?? and ?? was used to find the optimal value. The step size remains the same.
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+In this paper I used three multivariate dynamic models to compare their forecast performances. More specifically, I tried to answer the question if a model which takes financial regime switches into account may be useful for forecasting macroeconomic data. To answer this question a TVAR had to be compared to benchmark models. I used a standard VAR and a VAR with stochastic volatility for this purpose. All three models have been estimated based on a Bayesian approach akin to the approach taken in \textcite{alessandri17} and \textcite{banbura10}. 
+I used a VAR model as the baseline scenario,  a standard approach in the literature (see, for example, \cite{alessandri17} and \cite{clark15}). Moreover, the VAR with stochastic volatility was chosen as a second benchmark, given its superb forecasting abilities. The forecasts were evaluated via point forecasts and density forecast metrics. In addition, I also investigated the potential of pooling the three models -- based on scoring success -- to improve forecasting performance.
+
+My results show \ldots
+
+All algorithms for the models described in Section \ref{sec:models} were written \textbf{\textsf{R}} and \textbf{\textsf{C}\texttt{++}} and integrated via the \textbf{\textsf{Rcpp}} package \parencite{eddel11, eddel17}. %The algorithm by \textcite{kastner14} was taken from package \textbf{\textsf{stochvol}} \parencite{kastner16}. %and forecast evaluation methods were provided by the package \textbf{scoringRules} \parencite{jordan18}. 
+The code is available at \url{https://github.com/alexhaider/Bayes_VARs}.\footnote{The functions are provided as-is with very little documentation so far. They are not available as a \textbf{\textsf{R}} package.}
+
+%HINWEIS AUF CODE
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    REFERENCES
+\clearpage
+\printbibliography
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    FIGURES
+
+%\clearpage
+%\newgeometry{left=2.5cm,top=1.5cm,right=2.5cm, bottom=2cm}
+
+%\begin{figure}[!ht] \centering
+ 
+%\end{figure}
+
+%\restoregeometry
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    TABLES
+
+%\input{tables/TableOne.tex} 
+
+%\clearpage \appendix \onehalfspacing
+%\section{Appendix}\label{sec:appendix1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   APPENDIX
+
+%\appendix
+%\section{Appendix}
+
+%\subsection{Estimation Algorithms}
+%\label{sec:algo}
+
+\setcounter{table}{0}
+\renewcommand\thetable{\Alph{section}.\arabic{table}}
+%\setcounter{figure}{0}
+%\renewcommand\thefigure{\Alph{section}.\arabic{figure}}
+
+\end{document}

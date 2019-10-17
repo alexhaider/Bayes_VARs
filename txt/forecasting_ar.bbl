@@ -1,0 +1,1971 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{alessandri17}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=61a0ad66f34d40939cd7fecb925a15d9}{%
+           family={Alessandri},
+           familyi={A\bibinitperiod},
+           given={Piergiorgio},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=258f7e10b68bc1922b099eb9e3f78f64}{%
+           family={Mumtaz},
+           familyi={M\bibinitperiod},
+           given={Haroon},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{04f41584e1e9c876da5485d080750a05}
+      \strng{fullhash}{04f41584e1e9c876da5485d080750a05}
+      \strng{bibnamehash}{04f41584e1e9c876da5485d080750a05}
+      \strng{authorbibnamehash}{04f41584e1e9c876da5485d080750a05}
+      \strng{authornamehash}{04f41584e1e9c876da5485d080750a05}
+      \strng{authorfullhash}{04f41584e1e9c876da5485d080750a05}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{If the links between credit markets and real economy tighten in a crisis, financial indicators might be particularly useful in forecasting the macroeconomic outcomes associated with episodes of financial distress. We examine this conjecture by using a range of linear and nonlinear VAR models to generate predictive distributions for US inflation and industrial production growth. Financial variables display significant predictive power over the Great Recession period, particularly if used within a threshold model that captures the structural break associated to the crisis. However, the Great Recession is unique: financial information and thresholds make little difference for forecasting prior to 2008.}
+      \field{issn}{1094-2025}
+      \field{journaltitle}{Review of Economic Dynamics}
+      \field{title}{Financial conditions and density forecasts for US output and inflation}
+      \field{volume}{24}
+      \field{year}{2017}
+      \field{pages}{66\bibrangedash 78}
+      \range{pages}{13}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.red.2017.01.003
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/S1094202517300042
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S1094202517300042
+      \endverb
+      \keyw{Forecasting,Financial crises,Great Recession,Threshold VAR,Stochastic volatility}
+    \endentry
+    \entry{amisano07}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=87329615e66fd1a5e1052f83b9bb3a9a}{%
+           family={Amisano},
+           familyi={A\bibinitperiod},
+           given={Gianni},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=28ae0007b614e429c7a8c8a85cea0425}{%
+           family={Giacomini},
+           familyi={G\bibinitperiod},
+           given={Raffaella},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {[American Statistical Association, Taylor \& Francis, Ltd.]}%
+      }
+      \strng{namehash}{d9c334956c7be0efd28419695c71d725}
+      \strng{fullhash}{d9c334956c7be0efd28419695c71d725}
+      \strng{bibnamehash}{d9c334956c7be0efd28419695c71d725}
+      \strng{authorbibnamehash}{d9c334956c7be0efd28419695c71d725}
+      \strng{authornamehash}{d9c334956c7be0efd28419695c71d725}
+      \strng{authorfullhash}{d9c334956c7be0efd28419695c71d725}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We propose a test for comparing the out-of-sample accuracy of competing density forecasts of a variable. The test is valid under general conditions: The data can be heterogeneous and the forecasts can be based on (nested or nonnested) parametric models or produced by semiparametric, nonparametric, or Bayesian estimation techniques. The evaluation is based on scoring rules, which are loss functions defined over the density forecast and the realizations of the variable. We restrict attention to the logarithmic scoring rule and propose an out-of-sample "weighted likelihood ratio" test that compares weighted averages of the scores for the competing forecasts. The user-defined weights are a way to focus attention on different regions of the distribution of the variable. For a uniform weight function, the test can be interpreted as an extension of Vuong's likelihood ratio test to time series data and to an out-of-sample testing framework. We apply the tests to evaluate density forecasts of U.S. inflation produced by linear and Markov-switching Phillips curve models estimated by either maximum likelihood or Bayesian methods. We conclude that a Markov-switching Phillips curve estimated by maximum likelihood produces the best density forecasts of inflation.}
+      \field{issn}{07350015}
+      \field{journaltitle}{Journal of Business \& Economic Statistics}
+      \field{number}{2}
+      \field{title}{Comparing Density Forecasts via Weighted Likelihood Ratio Tests}
+      \field{volume}{25}
+      \field{year}{2007}
+      \field{pages}{177\bibrangedash 190}
+      \range{pages}{14}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/27638923
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/27638923
+      \endverb
+    \endentry
+    \entry{avd18}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=ab6a71aa2d01b21df4efcdf55ceef4af}{%
+           family={Avdoulas},
+           familyi={A\bibinitperiod},
+           given={Christos},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=9227c110afda029c19e0f0b9c9661498}{%
+           family={Bekiros},
+           familyi={B\bibinitperiod},
+           given={Stelios},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4a0acac049eec47eb2415ee6734edf10}
+      \strng{fullhash}{4a0acac049eec47eb2415ee6734edf10}
+      \strng{bibnamehash}{4a0acac049eec47eb2415ee6734edf10}
+      \strng{authorbibnamehash}{4a0acac049eec47eb2415ee6734edf10}
+      \strng{authornamehash}{4a0acac049eec47eb2415ee6734edf10}
+      \strng{authorfullhash}{4a0acac049eec47eb2415ee6734edf10}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Stock Watson (in: Mills T, Patterson K (eds) Palgrave handbook of econometrics, Palgrave MacMillan, Basingstoke, 2003) argue that robust forecastability is dependent upon the optimality of the estimated parameters. Whilst recent studies in macroeconomic forecasting report the superiority of nonlinear models, yet they still suffer from precise parameter estimation. Our approach introduces evolutionary programming to optimize the parameters of various Threshold Autoregressive models. We generate forecasts for industrial production and compare our results versus linear benchmarks and quasi-maximum likelihood estimates for three Euro area countries. Based on our robust method, central banks and policy-makers could dynamically adjust their monetary and fiscal policy predictions.}
+      \field{issn}{1572-9974}
+      \field{journaltitle}{Computational Economics}
+      \field{month}{8}
+      \field{number}{2}
+      \field{title}{Nonlinear Forecasting of Euro Area Industrial Production Using Evolutionary Approaches}
+      \field{volume}{52}
+      \field{year}{2018}
+      \field{pages}{521\bibrangedash 530}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1007/s10614-017-9695-3
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s10614-017-9695-3
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s10614-017-9695-3
+      \endverb
+    \endentry
+    \entry{bos10}{report}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=75b84462843daced2ce94768dbb4beee}{%
+           family={Bos},
+           familyi={B\bibinitperiod},
+           given={Charles\bibnamedelima S.},
+           giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=04d1f9473fab4f9f6f4637e842a50e8f}{%
+           family={Koopman},
+           familyi={K\bibinitperiod},
+           given={Siem\bibnamedelima Jan},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Tinbergen Institute}%
+      }
+      \strng{namehash}{c1774929053aca017ff5ad58e947c472}
+      \strng{fullhash}{c1774929053aca017ff5ad58e947c472}
+      \strng{bibnamehash}{c1774929053aca017ff5ad58e947c472}
+      \strng{authorbibnamehash}{c1774929053aca017ff5ad58e947c472}
+      \strng{authornamehash}{c1774929053aca017ff5ad58e947c472}
+      \strng{authorfullhash}{c1774929053aca017ff5ad58e947c472}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Many seasonal macroeconomic time series are subject to changes in their means and variances over a long time horizon. In this paper we propose a general treatment for the modelling of time-varying features in economic time series. We show that time series models with mean and variance functions depending on dynamic stochastic processes can be sufficiently robust against changes in their dynamic properties. We further show that the implementation of the treatment is relatively straightforward. An illustration is given for monthly U.S. Industrial Production. The empirical results including estimates of time-varying means and variances are discussed in detail.}
+      \field{month}{2}
+      \field{number}{10-017/4}
+      \field{title}{{Models with Time-varying Mean and Variance: A Robust Analysis of U.S. Industrial Production}}
+      \field{type}{Tinbergen Institute Discussion Papers}
+      \field{year}{2010}
+      \verb{urlraw}
+      \verb https://ideas.repec.org/p/tin/wpaper/20100017.html
+      \endverb
+      \verb{url}
+      \verb https://ideas.repec.org/p/tin/wpaper/20100017.html
+      \endverb
+      \keyw{Common stochastic variance; Kalman filter; State space model; unobserved components time series mode}
+    \endentry
+    \entry{bulligan10}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=ae6af1d2de03fd465eae0a3c698b0ea5}{%
+           family={Bulligan},
+           familyi={B\bibinitperiod},
+           given={Guido},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e5b079fa551a5b16f3b6a747d7a423d4}{%
+           family={Golinelli},
+           familyi={G\bibinitperiod},
+           given={Roberto},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e67de3a950dd5abc219400c943b88e40}{%
+           family={Parigi},
+           familyi={P\bibinitperiod},
+           given={Giuseppe},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2e3c323aa6c937c68d81bc9cec29e422}
+      \strng{fullhash}{00b0fe2c3ab73a5bad7c2e87a3f1b09a}
+      \strng{bibnamehash}{00b0fe2c3ab73a5bad7c2e87a3f1b09a}
+      \strng{authorbibnamehash}{00b0fe2c3ab73a5bad7c2e87a3f1b09a}
+      \strng{authornamehash}{2e3c323aa6c937c68d81bc9cec29e422}
+      \strng{authorfullhash}{00b0fe2c3ab73a5bad7c2e87a3f1b09a}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Empirical Economics}
+      \field{title}{Forecasting monthly industrial production in real-time: from single equations to factor-based models}
+      \field{volume}{39}
+      \field{year}{2010}
+      \field{pages}{303\bibrangedash 336}
+      \range{pages}{34}
+    \endentry
+    \entry{chen95}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=a51035fd29bba25201eed7861145faf1}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Cathy\bibnamedelimb W.\bibnamedelimi S.},
+           giveni={C\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=3041f6ac9e65651f80281c3fef96dd57}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Jack\bibnamedelima C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3d1832dd4fef920f34c78fa04c4b6419}
+      \strng{fullhash}{3d1832dd4fef920f34c78fa04c4b6419}
+      \strng{bibnamehash}{3d1832dd4fef920f34c78fa04c4b6419}
+      \strng{authorbibnamehash}{3d1832dd4fef920f34c78fa04c4b6419}
+      \strng{authornamehash}{3d1832dd4fef920f34c78fa04c4b6419}
+      \strng{authorfullhash}{3d1832dd4fef920f34c78fa04c4b6419}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Abstract. The study of non-linear time series has attracted much attention in recent years. Among the models proposed, the threshold autoregressive (TAR) model and bilinear model are perhaps the most popular ones in the literature. However, the TAR model has not been widely used in practice due to the difficulty in identifying the threshold variable and in estimating the associated threshold value. The main focal point of this paper is a Bayesian analysis of the TAR model with two regimes. The desired marginal posterior densities of the threshold value and other parameters are obtained via the Gibbs sampler. This approach avoids sophisticated analytical and numerical multiple integration. It also provides an estimate of the threshold value directly without resorting to a subjective choice from various scatterplots. We illustrate the proposed methodology by using simulation experiments and analysis of a real data set.}
+      \field{journaltitle}{Journal of Time Series Analysis}
+      \field{number}{5}
+      \field{title}{Bayesian Inference of Threshold Autoregressive Models}
+      \field{volume}{16}
+      \field{year}{1995}
+      \field{pages}{483\bibrangedash 492}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1111/j.1467-9892.1995.tb00248.x
+      \endverb
+      \verb{eprint}
+      \verb https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.1467-9892.1995.tb00248.x
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-9892.1995.tb00248.x
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-9892.1995.tb00248.x
+      \endverb
+      \keyw{Arranged autoregression,changepoints,Gibbs sampler,Metropolis algorithm,threshold autogressive model}
+    \endentry
+    \entry{clark01}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=2ae307c27ef2564b9e53fdb2eca67cbd}{%
+           family={Clark},
+           familyi={C\bibinitperiod},
+           given={Todd\bibnamedelima E.},
+           giveni={T\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=5ad58a885f2200e3768b305db61d9276}{%
+           family={McCracken},
+           familyi={M\bibinitperiod},
+           given={Michael\bibnamedelima W.},
+           giveni={M\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d936fc029678388023b5d435a2356b2b}
+      \strng{fullhash}{d936fc029678388023b5d435a2356b2b}
+      \strng{bibnamehash}{d936fc029678388023b5d435a2356b2b}
+      \strng{authorbibnamehash}{d936fc029678388023b5d435a2356b2b}
+      \strng{authornamehash}{d936fc029678388023b5d435a2356b2b}
+      \strng{authorfullhash}{d936fc029678388023b5d435a2356b2b}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We examine the asymptotic and finite-sample properties of tests for equal forecast accuracy and encompassing applied to 1-step ahead forecasts from nested linear models. We first derive the asymptotic distributions of two standard tests and one new test of encompassing and provide tables of asymptotically valid critical values. Monte Carlo methods are then used to evaluate the size and power of tests of equal forecast accuracy and encompassing. The simulations indicate that post-sample tests can be reasonably well sized. Of the post-sample tests considered, the encompassing test proposed in this paper is the most powerful. We conclude with an empirical application regarding the predictive content of unemployment for inflation.}
+      \field{issn}{0304-4076}
+      \field{journaltitle}{Journal of Econometrics}
+      \field{note}{Forecasting and empirical methods in finance and macroeconomics}
+      \field{number}{1}
+      \field{title}{Tests of equal forecast accuracy and encompassing for nested models}
+      \field{volume}{105}
+      \field{year}{2001}
+      \field{pages}{85\bibrangedash 110}
+      \range{pages}{26}
+      \verb{doi}
+      \verb https://doi.org/10.1016/S0304-4076(01)00071-9
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/S0304407601000719
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0304407601000719
+      \endverb
+      \keyw{Causality,Forecast accuracy,Forecast encompassing}
+    \endentry
+    \entry{clark15}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=2ae307c27ef2564b9e53fdb2eca67cbd}{%
+           family={Clark},
+           familyi={C\bibinitperiod},
+           given={Todd\bibnamedelima E.},
+           giveni={T\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b779089a862d8f1bf7fb41f0df66faa9}{%
+           family={Ravazzolo},
+           familyi={R\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{77f745f1ef43e488e120dcd19024decf}
+      \strng{fullhash}{77f745f1ef43e488e120dcd19024decf}
+      \strng{bibnamehash}{77f745f1ef43e488e120dcd19024decf}
+      \strng{authorbibnamehash}{77f745f1ef43e488e120dcd19024decf}
+      \strng{authornamehash}{77f745f1ef43e488e120dcd19024decf}
+      \strng{authorfullhash}{77f745f1ef43e488e120dcd19024decf}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{SummaryThis paper compares alternative models of time-varying volatility on the basis of the accuracy of real-time point and density forecasts of key macroeconomic time series for the USA. We consider Bayesian autoregressive and vector autoregressive models that incorporate some form of time-varying volatility, precisely random walk stochastic volatility, stochastic volatility following a stationary AR process, stochastic volatility coupled with fat tails, GARCH and mixture of innovation models. The results show that the AR and VAR specifications with conventional stochastic volatility dominate other volatility specifications, in terms of point forecasting to some degree and density forecasting to a greater degree. Copyright © 2014 John Wiley \& Sons, Ltd.}
+      \field{journaltitle}{Journal of Applied Econometrics}
+      \field{number}{4}
+      \field{title}{Macroeconomic Forecasting Performance under Alternative Specifications of Time-Varying Volatility}
+      \field{volume}{30}
+      \field{year}{2015}
+      \field{pages}{551\bibrangedash 575}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1002/jae.2379
+      \endverb
+      \verb{eprint}
+      \verb https://onlinelibrary.wiley.com/doi/pdf/10.1002/jae.2379
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/jae.2379
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/jae.2379
+      \endverb
+    \endentry
+    \entry{clark07}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=2ae307c27ef2564b9e53fdb2eca67cbd}{%
+           family={Clark},
+           familyi={C\bibinitperiod},
+           given={Todd\bibnamedelima E.},
+           giveni={T\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=485f129224c7dab35581f6957cb9f1bc}{%
+           family={West},
+           familyi={W\bibinitperiod},
+           given={Kenneth\bibnamedelima D.},
+           giveni={K\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{140ced6fd75fdea73961d4892ff945c0}
+      \strng{fullhash}{140ced6fd75fdea73961d4892ff945c0}
+      \strng{bibnamehash}{140ced6fd75fdea73961d4892ff945c0}
+      \strng{authorbibnamehash}{140ced6fd75fdea73961d4892ff945c0}
+      \strng{authornamehash}{140ced6fd75fdea73961d4892ff945c0}
+      \strng{authorfullhash}{140ced6fd75fdea73961d4892ff945c0}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Forecast evaluation often compares a parsimonious null model to a larger model that nests the null model. Under the null that the parsimonious model generates the data, the larger model introduces noise into its forecasts by estimating parameters whose population values are zero. We observe that the mean squared prediction error (MSPE) from the parsimonious model is therefore expected to be smaller than that of the larger model. We describe how to adjust MSPEs to account for this noise. We propose applying standard methods [West, K.D., 1996. Asymptotic inference about predictive ability. Econometrica 64, 1067–1084] to test whether the adjusted mean squared error difference is zero. We refer to nonstandard limiting distributions derived in Clark and McCracken [2001. Tests of equal forecast accuracy and encompassing for nested models. Journal of Econometrics 105, 85–110; 2005a. Evaluating direct multistep forecasts. Econometric Reviews 24, 369–404] to argue that use of standard normal critical values will yield actual sizes close to, but a little less than, nominal size. Simulation evidence supports our recommended procedure.}
+      \field{issn}{0304-4076}
+      \field{journaltitle}{Journal of Econometrics}
+      \field{note}{50th Anniversary Econometric Institute}
+      \field{number}{1}
+      \field{title}{Approximately normal tests for equal predictive accuracy in nested models}
+      \field{volume}{138}
+      \field{year}{2007}
+      \field{pages}{291\bibrangedash 311}
+      \range{pages}{21}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.jeconom.2006.05.023
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/S0304407606000960
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0304407606000960
+      \endverb
+      \keyw{Out of sample,Causality,Random walk,Testing,Efficient markets,Principle of parsimony}
+    \endentry
+    \entry{dacco99}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=c54742be0f8c20a2af01d64baeae487a}{%
+           family={Dacco},
+           familyi={D\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=edc5e6b30a6c4fb1c9ececa28fe0be6a}{%
+           family={Satchell},
+           familyi={S\bibinitperiod},
+           given={Steve},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1c70936e173a0ad3898c9ed5b5ab5207}
+      \strng{fullhash}{1c70936e173a0ad3898c9ed5b5ab5207}
+      \strng{bibnamehash}{1c70936e173a0ad3898c9ed5b5ab5207}
+      \strng{authorbibnamehash}{1c70936e173a0ad3898c9ed5b5ab5207}
+      \strng{authornamehash}{1c70936e173a0ad3898c9ed5b5ab5207}
+      \strng{authorfullhash}{1c70936e173a0ad3898c9ed5b5ab5207}
+      \field{sortinit}{D}
+      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Abstract Most non-linear techniques give good in-sample fits to exchange rate data but are usually outperformed by random walks or random walks with drift when used for out-of-sample forecasting. In the case of regime-switching models it is possible to understand why forecasts based on the true model can have higher mean squared error than those of a random walk or random walk with drift. In this paper we provide some analytical results for the case of a simple switching model, the segmented trend model. It requires only a small misclassification, when forecasting which regime the world will be in, to lose any advantage from knowing the correct model specification. To illustrate this we discuss some results for the DM/dollar exchange rate. We conjecture that the forecasting result is more general and describes limitations to the use of switching models for forecasting. This result has two implications. First, it questions the leading role of the random walk hypothesis for the spot exchange rate. Second, it suggests that the mean square error is not an appropriate way to evaluate forecast performance for non-linear models. Copyright © 1999 John Wiley \& Sons, Ltd.}
+      \field{journaltitle}{Journal of Forecasting}
+      \field{number}{1}
+      \field{title}{Why do regime-switching models forecast so badly?}
+      \field{volume}{18}
+      \field{year}{1999}
+      \field{pages}{1\bibrangedash 16}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1002/(SICI)1099-131X(199901)18:1<1::AID-FOR685>3.0.CO;2-B
+      \endverb
+      \verb{eprint}
+      \verb https://onlinelibrary.wiley.com/doi/pdf/10.1002/%28SICI%291099-131X%28199901%2918%3A1%3C1%3A%3AAID-FOR685%3E3.0.CO%3B2-B
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/%28SICI%291099-131X%28199901%2918%3A1%3C1%3A%3AAID-FOR685%3E3.0.CO%3B2-B
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/%28SICI%291099-131X%28199901%2918%3A1%3C1%3A%3AAID-FOR685%3E3.0.CO%3B2-B
+      \endverb
+      \keyw{non-linear techniques,regime-switching model,forecast accuracy,DM/dollar exchange rate}
+    \endentry
+    \entry{deg92}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=c8e4eb569b139b0194d3f21eca1256c1}{%
+           family={{de Gooijer}},
+           familyi={d\bibinitperiod},
+           given={Jan\bibnamedelima G.},
+           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=53563cd70da67dad5e465d71ed2297d5}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Kuldeep},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3634c580b381ecdc8bc4e40a3a5100a0}
+      \strng{fullhash}{3634c580b381ecdc8bc4e40a3a5100a0}
+      \strng{bibnamehash}{3634c580b381ecdc8bc4e40a3a5100a0}
+      \strng{authorbibnamehash}{3634c580b381ecdc8bc4e40a3a5100a0}
+      \strng{authornamehash}{3634c580b381ecdc8bc4e40a3a5100a0}
+      \strng{authorfullhash}{3634c580b381ecdc8bc4e40a3a5100a0}
+      \field{sortinit}{d}
+      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Most of the recent work in time series analysis has been done on the assumption that the structure of the series can be described by linear time series models. However, there are occasions when subject-matter, theory or data suggest that linear models are unsatisfactory. In those cases it is desirable to look at non-linear alternatives. This paper gives an overview of the most recent developments in this area. Particular attention is paid to the strengths and weaknesses (advantages and disadvantages) of a large number of models and tests for non-linearity, focusing on ‘ready-to-use’ issues rather than discussing technical details. Various problems in forecasting from non-linear models are discussed. Some guidelines for practical non-linear time series modelling and forecasting are also included.}
+      \field{issn}{0169-2070}
+      \field{journaltitle}{International Journal of Forecasting}
+      \field{number}{2}
+      \field{title}{Some recent developments in non-linear time series modelling, testing, and forecasting}
+      \field{volume}{8}
+      \field{year}{1992}
+      \field{pages}{135\bibrangedash 156}
+      \range{pages}{22}
+      \verb{doi}
+      \verb https://doi.org/10.1016/0169-2070(92)90115-P
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/016920709290115P
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/016920709290115P
+      \endverb
+      \keyw{ARCH,Bilinear,CUSUMS,Exponential AR,Identification,Invertibility,Lagrange-multiplier test,Multi-step-ahead forecasting,Order selection,Thresho}
+    \endentry
+    \entry{desantis16}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=171aeb51a3b4d5713adfd14d9da26318}{%
+           family={De\bibnamedelima Santis},
+           familyi={D\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Roberta},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=7782af4c87de6e576208b17a2f175ed0}{%
+           family={Cesaroni},
+           familyi={C\bibinitperiod},
+           given={Tatiana},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{56cabd083d7d24c8086c7e51e2434a72}
+      \strng{fullhash}{56cabd083d7d24c8086c7e51e2434a72}
+      \strng{bibnamehash}{56cabd083d7d24c8086c7e51e2434a72}
+      \strng{authorbibnamehash}{56cabd083d7d24c8086c7e51e2434a72}
+      \strng{authornamehash}{56cabd083d7d24c8086c7e51e2434a72}
+      \strng{authorfullhash}{56cabd083d7d24c8086c7e51e2434a72}
+      \field{sortinit}{D}
+      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Abstract Current account (CA) dispersion within European Union (EU) Member States has been increasing progressively since the 1990s. Interestingly, the persistent deficits in many peripheral countries have not been accompanied by a significant growth process able to stimulate a log run rebalancing as neoclassical theory predicts. To shed light on the issue, this paper investigates the determinants of Eurozone CA imbalances, focusing on the role played by financial integration. The analysis considers two samples of 22 OECD and 15 EU countries, three time horizons corresponding to various steps in European integration, different control variables and several panel econometric methods. The results suggest that within the EU group of countries financial integration contributed to explain the CA deterioration in the peripheral countries especially in the post-EMU period creating an asymmetric behaviour within the EMU. From a financial stability perspective, this ‘divergence’ could hinder the effectiveness of monetary policy. By reducing the apparent benefits of participating in the monetary union, it also raises the risk of a break-up.}
+      \field{journaltitle}{The World Economy}
+      \field{number}{10}
+      \field{title}{Current Account ‘Core–Periphery Dualism’ in the EMU}
+      \field{volume}{39}
+      \field{year}{2016}
+      \field{pages}{1514\bibrangedash 1538}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1111/twec.12418
+      \endverb
+      \verb{eprint}
+      \verb https://onlinelibrary.wiley.com/doi/pdf/10.1111/twec.12418
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/twec.12418
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/twec.12418
+      \endverb
+    \endentry
+    \entry{diebold15}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=b36654a560f83732f007a4f95a4b6e0f}{%
+           family={Diebold},
+           familyi={D\bibinitperiod},
+           given={Francis\bibnamedelima X.},
+           giveni={F\bibinitperiod\bibinitdelim X\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{b36654a560f83732f007a4f95a4b6e0f}
+      \strng{fullhash}{b36654a560f83732f007a4f95a4b6e0f}
+      \strng{bibnamehash}{b36654a560f83732f007a4f95a4b6e0f}
+      \strng{authorbibnamehash}{b36654a560f83732f007a4f95a4b6e0f}
+      \strng{authornamehash}{b36654a560f83732f007a4f95a4b6e0f}
+      \strng{authorfullhash}{b36654a560f83732f007a4f95a4b6e0f}
+      \field{sortinit}{D}
+      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Business \& Economic Statistics}
+      \field{number}{1}
+      \field{title}{Comparing Predictive Accuracy, Twenty Years Later: A Personal Perspective on the Use and Abuse of Diebold–Mariano Tests}
+      \field{volume}{33}
+      \field{year}{2015}
+      \field{pages}{1\bibrangedash 1}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1080/07350015.2014.983236
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1080/07350015.2014.983236
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1080/07350015.2014.983236
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1080/07350015.2014.983236
+      \endverb
+    \endentry
+    \entry{eddel17}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=19c16a29c7c1db67796fdee712478912}{%
+           family={Eddelbuettel},
+           familyi={E\bibinitperiod},
+           given={Dirk},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=9a3879b11e6cb04563194b652988e9a3}{%
+           family={Balamuta},
+           familyi={B\bibinitperiod},
+           given={James\bibnamedelima Joseph},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2edc2bd31f6df20dcd794faa414d2c18}
+      \strng{fullhash}{2edc2bd31f6df20dcd794faa414d2c18}
+      \strng{bibnamehash}{2edc2bd31f6df20dcd794faa414d2c18}
+      \strng{authorbibnamehash}{2edc2bd31f6df20dcd794faa414d2c18}
+      \strng{authornamehash}{2edc2bd31f6df20dcd794faa414d2c18}
+      \strng{authorfullhash}{2edc2bd31f6df20dcd794faa414d2c18}
+      \field{sortinit}{E}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2167-9843}
+      \field{journaltitle}{PeerJ Preprints}
+      \field{month}{8}
+      \field{title}{{Extending R with C++: A Brief Introduction to Rcpp}}
+      \field{volume}{5}
+      \field{year}{2017}
+      \field{pages}{e3188v1}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.7287/peerj.preprints.3188v1
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.7287/peerj.preprints.3188v1
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.7287/peerj.preprints.3188v1
+      \endverb
+    \endentry
+    \entry{eddel11}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=19c16a29c7c1db67796fdee712478912}{%
+           family={Eddelbuettel},
+           familyi={E\bibinitperiod},
+           given={Dirk},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=3bd2c624a8715b2aeffcecaa24f3d017}{%
+           family={François},
+           familyi={F\bibinitperiod},
+           given={Romain},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c9405437a9d3c5c4ca1e5058f31a0785}
+      \strng{fullhash}{c9405437a9d3c5c4ca1e5058f31a0785}
+      \strng{bibnamehash}{c9405437a9d3c5c4ca1e5058f31a0785}
+      \strng{authorbibnamehash}{c9405437a9d3c5c4ca1e5058f31a0785}
+      \strng{authornamehash}{c9405437a9d3c5c4ca1e5058f31a0785}
+      \strng{authorfullhash}{c9405437a9d3c5c4ca1e5058f31a0785}
+      \field{sortinit}{E}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Statistical Software}
+      \field{number}{8}
+      \field{title}{Rcpp: Seamless R and C++ Integration}
+      \field{volume}{40}
+      \field{year}{2011}
+      \field{pages}{1\bibrangedash 18}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.18637/jss.v040.i08
+      \endverb
+      \verb{urlraw}
+      \verb http://www.jstatsoft.org/v40/i08/
+      \endverb
+      \verb{url}
+      \verb http://www.jstatsoft.org/v40/i08/
+      \endverb
+    \endentry
+    \entry{gew11}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=73fa8bd1fc6234dda333ed7be4d87999}{%
+           family={Geweke},
+           familyi={G\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=87329615e66fd1a5e1052f83b9bb3a9a}{%
+           family={Amisano},
+           familyi={A\bibinitperiod},
+           given={Gianni},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8b7d554421f834fb359efcc6ca63a72e}
+      \strng{fullhash}{8b7d554421f834fb359efcc6ca63a72e}
+      \strng{bibnamehash}{8b7d554421f834fb359efcc6ca63a72e}
+      \strng{authorbibnamehash}{8b7d554421f834fb359efcc6ca63a72e}
+      \strng{authornamehash}{8b7d554421f834fb359efcc6ca63a72e}
+      \strng{authorfullhash}{8b7d554421f834fb359efcc6ca63a72e}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We consider the properties of weighted linear combinations of prediction models, or linear pools, evaluated using the log predictive scoring rule. Although exactly one model has limiting posterior probability, an optimal linear combination typically includes several models with positive weights. We derive several interesting results: for example, a model with positive weight in a pool may have zero weight if some other models are deleted from that pool. The results are illustrated using S&P 500 returns with six prediction models. In this example models that are clearly inferior by the usual scoring criteria have positive weights in optimal linear pools.}
+      \field{issn}{0304-4076}
+      \field{journaltitle}{Journal of Econometrics}
+      \field{note}{Annals Issue on Forecasting}
+      \field{number}{1}
+      \field{title}{Optimal prediction pools}
+      \field{volume}{164}
+      \field{year}{2011}
+      \field{pages}{130\bibrangedash 141}
+      \range{pages}{12}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.jeconom.2011.02.017
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/S0304407611000455
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0304407611000455
+      \endverb
+      \keyw{Forecasting,Log scoring,Model combination,S&P 500 returns}
+    \endentry
+    \entry{gneiting07}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=cf94799d213c0ab2fd2012473da7440b}{%
+           family={Gneiting},
+           familyi={G\bibinitperiod},
+           given={Tilmann},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=0451cbcfdf7af3838441abe600b2a495}{%
+           family={Raftery},
+           familyi={R\bibinitperiod},
+           given={Adrian\bibnamedelima E},
+           giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor & Francis}%
+      }
+      \strng{namehash}{3f0b091658f81f84499ff7b1cc15e6da}
+      \strng{fullhash}{3f0b091658f81f84499ff7b1cc15e6da}
+      \strng{bibnamehash}{3f0b091658f81f84499ff7b1cc15e6da}
+      \strng{authorbibnamehash}{3f0b091658f81f84499ff7b1cc15e6da}
+      \strng{authornamehash}{3f0b091658f81f84499ff7b1cc15e6da}
+      \strng{authorfullhash}{3f0b091658f81f84499ff7b1cc15e6da}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the American Statistical Association}
+      \field{number}{477}
+      \field{title}{Strictly Proper Scoring Rules, Prediction, and Estimation}
+      \field{volume}{102}
+      \field{year}{2007}
+      \field{pages}{359\bibrangedash 378}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1198/016214506000001437
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1198/016214506000001437
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1198/016214506000001437
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1198/016214506000001437
+      \endverb
+    \endentry
+    \entry{golinelli07}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=e5b079fa551a5b16f3b6a747d7a423d4}{%
+           family={Golinelli},
+           familyi={G\bibinitperiod},
+           given={Roberto},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e67de3a950dd5abc219400c943b88e40}{%
+           family={Parigi},
+           familyi={P\bibinitperiod},
+           given={Giuseppe},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{150a538deb94a8114f80aac5f9909028}
+      \strng{fullhash}{150a538deb94a8114f80aac5f9909028}
+      \strng{bibnamehash}{150a538deb94a8114f80aac5f9909028}
+      \strng{authorbibnamehash}{150a538deb94a8114f80aac5f9909028}
+      \strng{authornamehash}{150a538deb94a8114f80aac5f9909028}
+      \strng{authorfullhash}{150a538deb94a8114f80aac5f9909028}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Abstract The delayed release of the National Account data for GDP is an impediment to the early understanding of the economic situation. In the short run, this information gap may be at least partially eliminated by bridge models (BM) which exploit the information content of timely updated monthly indicators. In this paper we examine the forecasting ability of BM for GDP growth in the G7 countries and compare their performance to that of univariate and multivariate statistical benchmark models. We run four alternative one-quarter-ahead forecasting experiments to assess BM performance in situations as close as possible to the actual forecasting activity. BM are estimated for GDP both for single countries (USA, Japan, Germany, France, UK, Italy and Canada), and area-wide (G7, European Union, and Euro area). BM forecasting ability is always superior to that of benchmark models, provided that at least some monthly indicator data are available over the forecasting horizon.  Copyright © 2007 John Wiley \& Sons, Ltd.}
+      \field{journaltitle}{Journal of Forecasting}
+      \field{number}{2}
+      \field{title}{The use of monthly indicators to forecast quarterly GDP in the short run: an application to the G7 countries}
+      \field{volume}{26}
+      \field{year}{2007}
+      \field{pages}{77\bibrangedash 94}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1002/for.1007
+      \endverb
+      \verb{eprint}
+      \verb https://onlinelibrary.wiley.com/doi/pdf/10.1002/for.1007
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/for.1007
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/for.1007
+      \endverb
+      \keyw{short-term GDP forecast,bridge model (BM),out-of-sample forecasting accuracy,forecasts by country and by area}
+    \endentry
+    \entry{harvey97}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=4f63956032539faf2fc63521a396bb52}{%
+           family={Harvey},
+           familyi={H\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a62820d4f34964c620f86ed9b329393e}{%
+           family={Leybourne},
+           familyi={L\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=22ddadabe7942d404c287252f9388594}{%
+           family={Newbold},
+           familyi={N\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{47731c0555c355a34dfebaa22db1b3a0}
+      \strng{fullhash}{6123759bd122dbc937b67571722809a4}
+      \strng{bibnamehash}{6123759bd122dbc937b67571722809a4}
+      \strng{authorbibnamehash}{6123759bd122dbc937b67571722809a4}
+      \strng{authornamehash}{47731c0555c355a34dfebaa22db1b3a0}
+      \strng{authorfullhash}{6123759bd122dbc937b67571722809a4}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Given two sources of forecasts of the same quantity, it is possible to compare prediction records. In particular, it can be useful to test the hypothesis of equal accuracy in forecast performance. We analyse the behaviour of two possible tests, and of modifications of these tests designed to circumvent shortcomings in the original formulations. As a result of this analysis, a recommendation for one particular testing approach is made for practical applications.}
+      \field{issn}{0169-2070}
+      \field{journaltitle}{International Journal of Forecasting}
+      \field{number}{2}
+      \field{title}{Testing the equality of prediction mean squared errors}
+      \field{volume}{13}
+      \field{year}{1997}
+      \field{pages}{281\bibrangedash 291}
+      \range{pages}{11}
+      \verb{doi}
+      \verb https://doi.org/10.1016/S0169-2070(96)00719-4
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/S0169207096007194
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0169207096007194
+      \endverb
+      \keyw{Comparing forecasts,Correlated forecast errors,Evaluation of forecasts,Non-normality}
+    \endentry
+    \entry{hubrich13}{inbook}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=ac58833cf22ff85c82c8f02989473059}{%
+           family={Hubrich},
+           familyi={H\bibinitperiod},
+           given={Kirstin},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=77b26b761b5b55458b37655c5470dce1}{%
+           family={Teräsvirta},
+           familyi={T\bibinitperiod},
+           given={Timo},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=2cb5bf1764b24011e1026f9505f3c182}{%
+           family={Fomby},
+           familyi={F\bibinitperiod},
+           given={Thomas\bibnamedelima B.},
+           giveni={T\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=9170e9b9292218b3597d8f9f52d2a454}{%
+           family={Kilian},
+           familyi={K\bibinitperiod},
+           given={Lutz},
+           giveni={L\bibinitperiod}}}%
+        {{hash=9a7590c9412bcb1debb37ae875e19ee8}{%
+           family={Murphy},
+           familyi={M\bibinitperiod},
+           given={Anthony},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Emerald}%
+      }
+      \strng{namehash}{464da0a082d920f569280df992ffcea6}
+      \strng{fullhash}{464da0a082d920f569280df992ffcea6}
+      \strng{bibnamehash}{464da0a082d920f569280df992ffcea6}
+      \strng{authorbibnamehash}{464da0a082d920f569280df992ffcea6}
+      \strng{authornamehash}{464da0a082d920f569280df992ffcea6}
+      \strng{authorfullhash}{464da0a082d920f569280df992ffcea6}
+      \strng{editorbibnamehash}{6303a5c520892a20db8386eacb7f5981}
+      \strng{editornamehash}{d3ae5b497bfcd492cbeb9463a1b2eea2}
+      \strng{editorfullhash}{6303a5c520892a20db8386eacb7f5981}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{chapter}{Thresholds and Smooth Transitions in Vector Autoregressive Models}
+      \field{series}{Advances in Econometrics}
+      \field{title}{VAR Models in Macroeconomics – New Developments and Applications: Essays in Honor of Christopher A. Sims}
+      \field{volume}{32}
+      \field{year}{2013}
+      \field{pages}{273\bibrangedash 326}
+      \range{pages}{54}
+    \endentry
+    \entry{jac94}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=cdac4d198ca4b82930fb0c29041092b3}{%
+           family={Jacquier},
+           familyi={J\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=33cd40b93562b2c28bcf023153c565a8}{%
+           family={Polson},
+           familyi={P\bibinitperiod},
+           given={Nicholas\bibnamedelima G},
+           giveni={N\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=04fa26d436dc907b1acd9d62677500d8}{%
+           family={Rossi},
+           familyi={R\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{aa6c546189f39a4dab169f03be70d5b4}
+      \strng{fullhash}{66677866a27a59a514cf6d2477c7e453}
+      \strng{bibnamehash}{66677866a27a59a514cf6d2477c7e453}
+      \strng{authorbibnamehash}{66677866a27a59a514cf6d2477c7e453}
+      \strng{authornamehash}{aa6c546189f39a4dab169f03be70d5b4}
+      \strng{authorfullhash}{66677866a27a59a514cf6d2477c7e453}
+      \field{sortinit}{J}
+      \field{sortinithash}{fce5f8d0bd05e8d93f3dbe21c78897ca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{New techniques for the analysis of stochastic volatility models are developed. A Metropolis algorithm is used to construct a Markov Chain simulation tool. The exact solution to the filtering/smoothing problem of inferring about the unobserved variance states is a by-product of the authors' method. In addition, multistep-ahead predictive densities can be constructed. The authors illustrate their method by analyzing stock data. Sampling experiments are conducted to compare the performance of Bayes estimators to method of moments and quasi-maximum likelihood estimators proposed in the literature. In both parameter estimation and filtering, the Bayes estimators outperform these other approaches.}
+      \field{journaltitle}{Journal of Business \& Economic Statistics}
+      \field{number}{4}
+      \field{title}{Bayesian Analysis of Stochastic Volatility Models}
+      \field{volume}{12}
+      \field{year}{1994}
+      \field{pages}{371\bibrangedash 89}
+      \range{pages}{19}
+      \verb{urlraw}
+      \verb https://EconPapers.repec.org/RePEc:bes:jnlbes:v:12:y:1994:i:4:p:371-89
+      \endverb
+      \verb{url}
+      \verb https://EconPapers.repec.org/RePEc:bes:jnlbes:v:12:y:1994:i:4:p:371-89
+      \endverb
+    \endentry
+    \entry{kastner16}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=1609b81eaa990ea2bf000060bfbb1982}{%
+           family={Kastner},
+           familyi={K\bibinitperiod},
+           given={Gregor},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1609b81eaa990ea2bf000060bfbb1982}
+      \strng{fullhash}{1609b81eaa990ea2bf000060bfbb1982}
+      \strng{bibnamehash}{1609b81eaa990ea2bf000060bfbb1982}
+      \strng{authorbibnamehash}{1609b81eaa990ea2bf000060bfbb1982}
+      \strng{authornamehash}{1609b81eaa990ea2bf000060bfbb1982}
+      \strng{authorfullhash}{1609b81eaa990ea2bf000060bfbb1982}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Statistical Software}
+      \field{number}{5}
+      \field{title}{Dealing with Stochastic Volatility in Time Series Using the R Package {stochvol}}
+      \field{volume}{69}
+      \field{year}{2016}
+      \field{pages}{1\bibrangedash 30}
+      \range{pages}{30}
+      \verb{doi}
+      \verb 10.18637/jss.v069.i05
+      \endverb
+    \endentry
+    \entry{kastner14}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=1609b81eaa990ea2bf000060bfbb1982}{%
+           family={Kastner},
+           familyi={K\bibinitperiod},
+           given={Gregor},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=83485dfde2678ca0bd6138144fcfe9ff}{%
+           family={Frühwirth-Schnatter},
+           familyi={F\bibinithyphendelim S\bibinitperiod},
+           given={Sylvia},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{eb41762c3f8bf793d769e2df95c4c325}
+      \strng{fullhash}{eb41762c3f8bf793d769e2df95c4c325}
+      \strng{bibnamehash}{eb41762c3f8bf793d769e2df95c4c325}
+      \strng{authorbibnamehash}{eb41762c3f8bf793d769e2df95c4c325}
+      \strng{authornamehash}{eb41762c3f8bf793d769e2df95c4c325}
+      \strng{authorfullhash}{eb41762c3f8bf793d769e2df95c4c325}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computational Statistics \& Data Analysis}
+      \field{title}{Ancillarity-Sufficiency Interweaving Strategy ({ASIS}) for Boosting {MCMC} Estimation of Stochastic Volatility Models}
+      \field{volume}{76}
+      \field{year}{2014}
+      \field{pages}{408\bibrangedash 423}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1016/j.csda.2013.01.002
+      \endverb
+    \endentry
+    \entry{kim98}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=1916bac425c6d3d0abed4de07c55df5d}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Sangjoon},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=297d9c8d6a4dcfbed876803d5cbba67b}{%
+           family={Shephard},
+           familyi={S\bibinitperiod},
+           given={Neil},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=25628966014266922faf57d7f25b3abd}{%
+           family={Chib},
+           familyi={C\bibinitperiod},
+           given={Siddhartha},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {[Oxford University Press, Review of Economic Studies, Ltd.]}%
+      }
+      \strng{namehash}{7bed773d610ab4f1b7db6a0b2725e3e0}
+      \strng{fullhash}{46d2d1ba3ffe3cffb297f39cf84026e8}
+      \strng{bibnamehash}{46d2d1ba3ffe3cffb297f39cf84026e8}
+      \strng{authorbibnamehash}{46d2d1ba3ffe3cffb297f39cf84026e8}
+      \strng{authornamehash}{7bed773d610ab4f1b7db6a0b2725e3e0}
+      \strng{authorfullhash}{46d2d1ba3ffe3cffb297f39cf84026e8}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper, Markov chain Monte Carlo sampling methods are exploited to provide a unified, practical likelihood-based framework for the analysis of stochastic volatility models. A highly effective method is developed that samples all the unobserved volatilities at once using an approximating offset mixture model, followed by an importance reweighting procedure. This approach is compared with several alternative methods using real data. The paper also develops simulation-based methods for filtering, likelihood evaluation and model failure diagnostics. The issue of model choice using non-nested likelihood ratios and Bayes factors is also investigated. These methods are used to compare the fit of stochastic volatility and GARCH models. All the procedures are illustrated in detail.}
+      \field{issn}{00346527, 1467937X}
+      \field{journaltitle}{The Review of Economic Studies}
+      \field{number}{3}
+      \field{title}{Stochastic Volatility: Likelihood Inference and Comparison with ARCH Models}
+      \field{volume}{65}
+      \field{year}{1998}
+      \field{pages}{361\bibrangedash 393}
+      \range{pages}{33}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/2566931
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/2566931
+      \endverb
+    \endentry
+    \entry{krueger19}{report}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,uniquepart=base,hash=0dea7b2c404b99fd3b483b2644c851ae}{%
+           family={Krüger},
+           familyi={K\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=822edec23b0f36600352b2e830dcc80a}{%
+           family={Lerch},
+           familyi={L\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=18c24a5fa15388b3b3eb27dc794ac4b1}{%
+           family={Thorarinsdottir},
+           familyi={T\bibinitperiod},
+           given={T.L.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=9803ef01f162ccb5c2848ad5a0a723fe}{%
+           family={Gneiting},
+           familyi={G\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Heidelberg Institute for Theoretical Studies,}%
+      }
+      \strng{namehash}{c460ad16c01f5a831b89596447050b6e}
+      \strng{fullhash}{0b1f3bf392e58799b5636516d7995deb}
+      \strng{bibnamehash}{0b1f3bf392e58799b5636516d7995deb}
+      \strng{authorbibnamehash}{0b1f3bf392e58799b5636516d7995deb}
+      \strng{authornamehash}{c460ad16c01f5a831b89596447050b6e}
+      \strng{authorfullhash}{0b1f3bf392e58799b5636516d7995deb}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Predictive inference based on Markov chain Monte Carlo output,}
+      \field{type}{resreport}
+      \field{year}{2019}
+    \endentry
+    \entry{lopes06}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=a8fcf504f9bf87bd49788efb3194cacc}{%
+           family={Lopes},
+           familyi={L\bibinitperiod},
+           given={Hedibert\bibnamedelima F.},
+           giveni={H\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=d3f7c6c13fd47cbea982201621128969}{%
+           family={Salazar},
+           familyi={S\bibinitperiod},
+           given={Esther},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7a228c82a9bd6a58cb857168b9c162a0}
+      \strng{fullhash}{7a228c82a9bd6a58cb857168b9c162a0}
+      \strng{bibnamehash}{7a228c82a9bd6a58cb857168b9c162a0}
+      \strng{authorbibnamehash}{7a228c82a9bd6a58cb857168b9c162a0}
+      \strng{authornamehash}{7a228c82a9bd6a58cb857168b9c162a0}
+      \strng{authorfullhash}{7a228c82a9bd6a58cb857168b9c162a0}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Abstract.  In this paper, we propose a fully Bayesian approach to the special class of nonlinear time-series models called the logistic smooth transition autoregressive (LSTAR) model. Initially, a Gibbs sampler is proposed for the LSTAR where the lag length, k, is kept fixed. Then, uncertainty about k is taken into account and a novel reversible jump Markov Chain Monte Carlo (RJMCMC) algorithm is proposed. We compared our RJMCMC algorithm with well-known information criteria, such as the Akaikes̀ information criteria, the Bayesian information criteria (BIC) and the deviance information criteria. Our methodology is extensively studied against simulated and real-time series.}
+      \field{journaltitle}{Journal of Time Series Analysis}
+      \field{number}{1}
+      \field{title}{Bayesian Model Uncertainty In Smooth Transition Autoregressions}
+      \field{volume}{27}
+      \field{year}{2006}
+      \field{pages}{99\bibrangedash 117}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1111/j.1467-9892.2005.00455.x
+      \endverb
+      \verb{eprint}
+      \verb https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.1467-9892.2005.00455.x
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-9892.2005.00455.x
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-9892.2005.00455.x
+      \endverb
+      \keyw{Markov Chain Monte Carlo,nonlinear time-series model,model selection,reversible jump MCMC,deviance information criterion}
+    \endentry
+    \entry{marc02}{report}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=9a2e3d65329af03acd5f62d53e2cb4f4}{%
+           family={Marcellino},
+           familyi={M\bibinitperiod},
+           given={Massimiliano},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {IGIER (Innocenzo Gasparini Institute for Economic Research), Bocconi University}%
+      }
+      \strng{namehash}{9a2e3d65329af03acd5f62d53e2cb4f4}
+      \strng{fullhash}{9a2e3d65329af03acd5f62d53e2cb4f4}
+      \strng{bibnamehash}{9a2e3d65329af03acd5f62d53e2cb4f4}
+      \strng{authorbibnamehash}{9a2e3d65329af03acd5f62d53e2cb4f4}
+      \strng{authornamehash}{9a2e3d65329af03acd5f62d53e2cb4f4}
+      \strng{authorfullhash}{9a2e3d65329af03acd5f62d53e2cb4f4}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper we evaluate the relative performance of linear, non-linear and time-varying models for about 500 macroeconomic variables for the countries in the Euro area, using real-time forecasting methodology. It turns out that linear models work well for about 35\% of the series under analysis, time-varying models for another 35\% and on-linear models for the remaining 30\% of the series. The gains in forecasting accuracy from the choice of the best model can be substantial, in particular for longer forecast horizons.These results emerge from a detailed is aggregated analysis, while they are hidden when an average loss function is used. To explore in more detail the issue of parameter instability, we then apply a battery of tests, detecting non-constancy in about 20-30\% of the time series. For these variables the forecasting performance of the time-varying and non-linear models further improves, with larger gains for a larger fraction of the series. Finally, we evaluate whether non-linear models perform better for three key macroeconomic variables: industrial production, inflation and unemployment. It turns out that this is often the case. Hence, overall, our results indicate that there is a substantial amount of instability and non-linearity in the EMU, and suggest that it can be worth going beyond linear models for several EMU macroeconomic variables.}
+      \field{number}{211}
+      \field{title}{{Instability and non-linearity in the EMU}}
+      \field{type}{Working Papers}
+      \field{year}{2002}
+      \verb{urlraw}
+      \verb https://ideas.repec.org/p/igi/igierp/211.html
+      \endverb
+      \verb{url}
+      \verb https://ideas.repec.org/p/igi/igierp/211.html
+      \endverb
+    \endentry
+    \entry{marc04}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=9a2e3d65329af03acd5f62d53e2cb4f4}{%
+           family={Marcellino},
+           familyi={M\bibinitperiod},
+           given={Massimiliano},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9a2e3d65329af03acd5f62d53e2cb4f4}
+      \strng{fullhash}{9a2e3d65329af03acd5f62d53e2cb4f4}
+      \strng{bibnamehash}{9a2e3d65329af03acd5f62d53e2cb4f4}
+      \strng{authorbibnamehash}{9a2e3d65329af03acd5f62d53e2cb4f4}
+      \strng{authornamehash}{9a2e3d65329af03acd5f62d53e2cb4f4}
+      \strng{authorfullhash}{9a2e3d65329af03acd5f62d53e2cb4f4}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{After the creation of the European Monetary Union (EMU), both the European Commission (EC) and the European Central Bank (ECB) are focusing more and more on the evolution of the EMU as a whole, rather than on single member countries. A particularly relevant issue from a policy point of view is the availability of reliable forecasts for the key macroeconomic variables. Hence, both the fiscal and the monetary authorities have developed aggregate forecasting models, along the lines previously adopted for the analysis of single countries. A similar approach will be likely followed in empirical analyses on, e.g., the existence of an aggregate Taylor rule or the evaluation of the aggregate impact of monetary policy shocks, where linear specifications are usually adopted. Yet, it is uncertain whether standard linear models provide the proper statistical framework to address these issues. The process of aggregation across countries can produce smoother series, better suited for the analysis with linear models, by averaging out country specific shocks. But the method of construction of the aggregate series, which often involves time-varying weights, and the presence of common shocks across the countries, such as the deflation in the early 1980s and the convergence process in the early 1990s, can introduce substantial non-linearity into the generating process of the aggregate series. To evaluate whether this is the case, we fit a variety of non-linear and time-varying models to aggregate EMU macroeconomic variables, and compare them with linear specifications. Since non-linear models often over-fit in sample, we assess their performance in a real time forecasting framework. It turns out that for several variables linear models are beaten by non-linear specifications, a result that questions the use of standard linear methods for forecasting and modeling EMU variables.}
+      \field{issn}{0169-2070}
+      \field{journaltitle}{International Journal of Forecasting}
+      \field{note}{Forecasting Economic and Financial Time Series Using Nonlinear Methods}
+      \field{number}{2}
+      \field{title}{Forecasting EMU macroeconomic variables}
+      \field{volume}{20}
+      \field{year}{2004}
+      \field{pages}{359\bibrangedash 372}
+      \range{pages}{14}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.ijforecast.2003.09.003
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/S0169207003001018
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0169207003001018
+      \endverb
+      \keyw{European Monetary Union,Forecasting,Time-varying models,Non-linear models,Instability,Non-linearity}
+    \endentry
+    \entry{newey94}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=4f8f0d4d68363b5d81a79f0c20f6374f}{%
+           family={Newey},
+           familyi={N\bibinitperiod},
+           given={Whitney\bibnamedelima K.},
+           giveni={W\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=485f129224c7dab35581f6957cb9f1bc}{%
+           family={West},
+           familyi={W\bibinitperiod},
+           given={Kenneth\bibnamedelima D.},
+           giveni={K\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1e4aa2f23dc28f766ca0f307fd17b3af}
+      \strng{fullhash}{1e4aa2f23dc28f766ca0f307fd17b3af}
+      \strng{bibnamehash}{1e4aa2f23dc28f766ca0f307fd17b3af}
+      \strng{authorbibnamehash}{1e4aa2f23dc28f766ca0f307fd17b3af}
+      \strng{authornamehash}{1e4aa2f23dc28f766ca0f307fd17b3af}
+      \strng{authorfullhash}{1e4aa2f23dc28f766ca0f307fd17b3af}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{{We propose a nonparametric method for automatically selecting the number of autocovariances to use in computing a heteroskedasticity and autocorrelation consistent covariance matrix. For a given kernel for weighting the autocovariances, we prove that our procedure is asymptotically equivalent to one that is optimal under a mean-squared error loss function. Monte Carlo simulations suggest that our procedure performs tolerably well, although it does result in size distortions.}}
+      \field{issn}{0034-6527}
+      \field{journaltitle}{The Review of Economic Studies}
+      \field{month}{10}
+      \field{number}{4}
+      \field{title}{{Automatic Lag Selection in Covariance Matrix Estimation}}
+      \field{volume}{61}
+      \field{year}{1994}
+      \field{pages}{631\bibrangedash 653}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.2307/2297912
+      \endverb
+      \verb{eprint}
+      \verb http://oup.prod.sis.lan/restud/article-pdf/61/4/631/4511723/61-4-631.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.2307/2297912
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.2307/2297912
+      \endverb
+    \endentry
+    \entry{pes97}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=ce89225f64de473b9ff924ce9dcdcf1c}{%
+           family={Pesaran},
+           familyi={P\bibinitperiod},
+           given={M.Hashem},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=2eff52b49536638d09e693bb3e0de2f3}{%
+           family={Potter},
+           familyi={P\bibinitperiod},
+           given={Simon\bibnamedelima M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{56b6953a4702590ba28d3e8d0ca38743}
+      \strng{fullhash}{56b6953a4702590ba28d3e8d0ca38743}
+      \strng{bibnamehash}{56b6953a4702590ba28d3e8d0ca38743}
+      \strng{authorbibnamehash}{56b6953a4702590ba28d3e8d0ca38743}
+      \strng{authornamehash}{56b6953a4702590ba28d3e8d0ca38743}
+      \strng{authorfullhash}{56b6953a4702590ba28d3e8d0ca38743}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Building on previous nonlinear time-series models we further examine the form of nonlinearity in US output. We develop a model of US output that allows for floor and ceiling effects to alter the dynamics of output growth. The model estimated on post-Korean War quarterly data, displays features similar to nonlinear trade cycle models of the 1940s and 1950s. Thus, as predicted by many of the earlier theoretical models, our empirical results suggest that the turning points of the business cycle provide new initial conditions for the ensuing growth process. We also find important asymmetries in the responses of output to positive and negative shocks. This history and shock dependence property is not present in linear or approximately linear models of the type that arise in the standard implementations of Real Business Cycle theory.}
+      \field{issn}{0165-1889}
+      \field{journaltitle}{Journal of Economic Dynamics and Control}
+      \field{number}{4}
+      \field{title}{A floor and ceiling model of US output}
+      \field{volume}{21}
+      \field{year}{1997}
+      \field{pages}{661\bibrangedash 695}
+      \range{pages}{35}
+      \verb{doi}
+      \verb https://doi.org/10.1016/S0165-1889(96)00002-4
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/S0165188996000024
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0165188996000024
+      \endverb
+      \keyw{Nonlinearity,Threshold autoregression,Floor,Ceiling,Generalized impulse responses}
+    \endentry
+    \entry{ramsey96}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=5e83485bcc06ce932ff65027c42bf370}{%
+           family={Ramsey},
+           familyi={R\bibinitperiod},
+           given={James\bibnamedelima B.},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5e83485bcc06ce932ff65027c42bf370}
+      \strng{fullhash}{5e83485bcc06ce932ff65027c42bf370}
+      \strng{bibnamehash}{5e83485bcc06ce932ff65027c42bf370}
+      \strng{authorbibnamehash}{5e83485bcc06ce932ff65027c42bf370}
+      \strng{authornamehash}{5e83485bcc06ce932ff65027c42bf370}
+      \strng{authorfullhash}{5e83485bcc06ce932ff65027c42bf370}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper begins with a brief review of the recent experience using nonlinear models and ideas of chaos to model economic data and to provide forecasts that are better than linear models. The record of improvement is at best meager. The remainder of the paper examines some of the reasons for this lack of improvement. The concepts of \&quot;openness\&quot; and \&quot;isolation\&quot; are introduced, and a case is made that open and nonisolated systems cannot be forecasted; the extent to which economic systems are closed and isolated provides the true pragmatic limits to forecastability. The reasons why local \&quot;overfitting,\&quot; especially with nonparametric models, leads to worse forecasts are discussed. Models and \&quot;representations\&quot; of data are distinguished and the reliance on minimum mean-square forecast error to choose between models and representations is evaluated.}
+      \field{journaltitle}{Studies in Nonlinear Dynamics \& Econometrics}
+      \field{month}{7}
+      \field{number}{2}
+      \field{title}{{If Nonlinear Models Cannot Forecast, What Use Are They?}}
+      \field{volume}{1}
+      \field{year}{1996}
+      \field{pages}{1\bibrangedash 24}
+      \range{pages}{24}
+      \verb{urlraw}
+      \verb https://ideas.repec.org/a/bpj/sndecm/v1y1996i2n1.html
+      \endverb
+      \verb{url}
+      \verb https://ideas.repec.org/a/bpj/sndecm/v1y1996i2n1.html
+      \endverb
+    \endentry
+    \entry{semmler18}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=b81e544fd36b910c43b6502dd935b8b1}{%
+           family={Semmler},
+           familyi={S\bibinitperiod},
+           given={Willi},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=5b230e47a9d05f7592e95779614d956c}{%
+           family={Haider},
+           familyi={H\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{53698cb545873f004adf4f4b50fa397c}
+      \strng{fullhash}{53698cb545873f004adf4f4b50fa397c}
+      \strng{bibnamehash}{53698cb545873f004adf4f4b50fa397c}
+      \strng{authorbibnamehash}{53698cb545873f004adf4f4b50fa397c}
+      \strng{authornamehash}{53698cb545873f004adf4f4b50fa397c}
+      \strng{authorfullhash}{53698cb545873f004adf4f4b50fa397c}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This article discusses the interaction of fiscal and monetary policy in the euro area. Though many observers suggest a fiscal union as the next step of euro‐area constitutional reform, a federal fiscal union does not appear politically feasible in the short run. We suggest moving forward with cooperative monetary and fiscal institutions and policies that allow for decentralized fiscal decisions, while taking federal stabilization policies into account. This approach will increase the probability of survival of the euro area compared with the current fiscal arrangements. Using a dynamic macro model, counterfactual simulation paths of our cooperative solution are contrasted with time‐series data for the euro area.}
+      \field{journaltitle}{Southern Economic Journal}
+      \field{month}{7}
+      \field{number}{1}
+      \field{title}{{Cooperative Monetary and Fiscal Policies in the Euro Area}}
+      \field{volume}{85}
+      \field{year}{2018}
+      \field{pages}{217\bibrangedash 234}
+      \range{pages}{18}
+      \verb{urlraw}
+      \verb https://ideas.repec.org/a/wly/soecon/v85y2018i1p217-234.html
+      \endverb
+      \verb{url}
+      \verb https://ideas.repec.org/a/wly/soecon/v85y2018i1p217-234.html
+      \endverb
+    \endentry
+    \entry{dijk03}{report}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=e10b0607f14189fa8d81a4c0837bee0d}{%
+           family={Siliverstovs},
+           familyi={S\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=ae031411956a21ca369bb4713d1ec4aa}{%
+           family={{van Dijk}},
+           familyi={v\bibinitperiod},
+           given={D.J.C.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Erasmus University Rotterdam, Erasmus School of Economics (ESE), Econometric Institute}%
+      }
+      \strng{namehash}{7ab8559ead6bf1f48499b967a827f009}
+      \strng{fullhash}{7ab8559ead6bf1f48499b967a827f009}
+      \strng{bibnamehash}{7ab8559ead6bf1f48499b967a827f009}
+      \strng{authorbibnamehash}{7ab8559ead6bf1f48499b967a827f009}
+      \strng{authornamehash}{7ab8559ead6bf1f48499b967a827f009}
+      \strng{authorfullhash}{7ab8559ead6bf1f48499b967a827f009}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We compare the forecasting performance of linear autoregressive models, autoregressive models with structural breaks, self-exciting threshold autoregressive models, and Markov switching autoregressive models in terms of point, interval, and density forecasts for h-month growth rates of industrial production of the G7 countries, for the period January 1960-December 2000. The results of point forecast evaluation tests support the established notion in the forecasting literature on the favorable performance of the linear AR model. By contrast, the Markov switching models render more accurate interval and density forecasts than the other models, including the linear AR model. This encouraging finding supports the idea that non-linear models may outperform linear competitors in terms of describing the uncertainty around future realizations of a time series.}
+      \field{month}{5}
+      \field{number}{EI 2003-16}
+      \field{title}{{Forecasting industrial production with linear, nonlinear, and structural change models}}
+      \field{type}{Econometric Institute Research Papers}
+      \field{year}{2003}
+      \verb{urlraw}
+      \verb https://ideas.repec.org/p/ems/eureir/1716.html
+      \endverb
+      \verb{url}
+      \verb https://ideas.repec.org/p/ems/eureir/1716.html
+      \endverb
+      \keyw{density forecasts; forecast evaluation tests; interval forecasts; nonlinearity; structural change}
+    \endentry
+    \entry{silva18}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=01c59ceff425b136c8381db23944c422}{%
+           family={Silva},
+           familyi={S\bibinitperiod},
+           given={Emmanuel\bibnamedelima Sirimal},
+           giveni={E\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=00eee8585956c44e62af69c16746d227}{%
+           family={Hassani},
+           familyi={H\bibinitperiod},
+           given={Hossein},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=324b85b5c14f51da486d3499e7354342}{%
+           family={Heravi},
+           familyi={H\bibinitperiod},
+           given={Saeed},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b74320306e50435c84d32ba6ad80b5dc}
+      \strng{fullhash}{413d970660931091b498541c2188c03d}
+      \strng{bibnamehash}{413d970660931091b498541c2188c03d}
+      \strng{authorbibnamehash}{413d970660931091b498541c2188c03d}
+      \strng{authornamehash}{b74320306e50435c84d32ba6ad80b5dc}
+      \strng{authorfullhash}{413d970660931091b498541c2188c03d}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper, an optimized multivariate singular spectrum analysis (MSSA) approach is proposed to find leading indicators of cross-industry relations between 24 monthly, seasonally unadjusted industrial production (IP) series for German, French, and UK economies. Both recurrent and vector forecasting algorithms of horizontal MSSA (HMSSA) are considered. The results from the proposed multivariate approach are compared with those obtained via the optimized univariate singular spectrum analysis (SSA) forecasting algorithm to determine the statistical significance of each outcome. The data are rigorously tested for normality, seasonal unit root hypothesis, and structural breaks. The results are presented such that users can not only identify the most appropriate model based on the aim of the analysis, but also easily identify the leading indicators for each IP variable in each country. Our findings show that, for all three countries, forecasts from the proposed MSSA algorithm outperform the optimized SSA algorithm in over 70\% of cases. Accordingly, this new approach succeeds in identifying leading indicators and is a viable option for selecting the SSA choices L and r, which minimizes a loss function.}
+      \field{journaltitle}{Journal of Forecasting}
+      \field{number}{3}
+      \field{title}{Modeling European industrial production with multivariate singular spectrum analysis: A cross-industry analysis}
+      \field{volume}{37}
+      \field{year}{2018}
+      \field{pages}{371\bibrangedash 384}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1002/for.2508
+      \endverb
+      \verb{eprint}
+      \verb https://onlinelibrary.wiley.com/doi/pdf/10.1002/for.2508
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/for.2508
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/for.2508
+      \endverb
+      \keyw{forecasting,industrial production,leading indicators,multivariate SSA,singular spectrum analysis}
+    \endentry
+    \entry{silverman86}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=1a1448224e288d36850d614d839ef85c}{%
+           family={Silverman},
+           familyi={S\bibinitperiod},
+           given={B.\bibnamedelimi W.},
+           giveni={B\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {London}%
+      }
+      \list{publisher}{1}{%
+        {Chapman \& Hall}%
+      }
+      \strng{namehash}{1a1448224e288d36850d614d839ef85c}
+      \strng{fullhash}{1a1448224e288d36850d614d839ef85c}
+      \strng{bibnamehash}{1a1448224e288d36850d614d839ef85c}
+      \strng{authorbibnamehash}{1a1448224e288d36850d614d839ef85c}
+      \strng{authornamehash}{1a1448224e288d36850d614d839ef85c}
+      \strng{authorfullhash}{1a1448224e288d36850d614d839ef85c}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Density Estimation for Statistics and Data Analysis}
+      \field{year}{1986}
+      \keyw{imported}
+    \endentry
+    \entry{stock96}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=4adfa0f3f1a3f590a4fea411c060be3e}{%
+           family={Stock},
+           familyi={S\bibinitperiod},
+           given={James\bibnamedelima H.},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=14627cda422c5555aaa23f130943683a}{%
+           family={Watson},
+           familyi={W\bibinitperiod},
+           given={Mark\bibnamedelima W.},
+           giveni={M\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{fb00d0f8852ddbe98fb0cd6381003fef}
+      \strng{fullhash}{fb00d0f8852ddbe98fb0cd6381003fef}
+      \strng{bibnamehash}{fb00d0f8852ddbe98fb0cd6381003fef}
+      \strng{authorbibnamehash}{fb00d0f8852ddbe98fb0cd6381003fef}
+      \strng{authornamehash}{fb00d0f8852ddbe98fb0cd6381003fef}
+      \strng{authorfullhash}{fb00d0f8852ddbe98fb0cd6381003fef}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Business \& Economic Statistics}
+      \field{number}{1}
+      \field{title}{Evidence on Structural Instability in Macroeconomic Time Series Relations}
+      \field{volume}{14}
+      \field{year}{1996}
+      \field{pages}{11\bibrangedash 30}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1080/07350015.1996.10524626
+      \endverb
+      \verb{eprint}
+      \verb https://www.tandfonline.com/doi/pdf/10.1080/07350015.1996.10524626
+      \endverb
+      \verb{urlraw}
+      \verb https://www.tandfonline.com/doi/abs/10.1080/07350015.1996.10524626
+      \endverb
+      \verb{url}
+      \verb https://www.tandfonline.com/doi/abs/10.1080/07350015.1996.10524626
+      \endverb
+    \endentry
+    \entry{stock07}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=4adfa0f3f1a3f590a4fea411c060be3e}{%
+           family={Stock},
+           familyi={S\bibinitperiod},
+           given={James\bibnamedelima H.},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=14627cda422c5555aaa23f130943683a}{%
+           family={Watson},
+           familyi={W\bibinitperiod},
+           given={Mark\bibnamedelima W.},
+           giveni={M\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{fb00d0f8852ddbe98fb0cd6381003fef}
+      \strng{fullhash}{fb00d0f8852ddbe98fb0cd6381003fef}
+      \strng{bibnamehash}{fb00d0f8852ddbe98fb0cd6381003fef}
+      \strng{authorbibnamehash}{fb00d0f8852ddbe98fb0cd6381003fef}
+      \strng{authornamehash}{fb00d0f8852ddbe98fb0cd6381003fef}
+      \strng{authorfullhash}{fb00d0f8852ddbe98fb0cd6381003fef}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Money, Credit and Banking}
+      \field{month}{02}
+      \field{title}{Why has U.S. Inflation Become Harder to Forecast?}
+      \field{volume}{39}
+      \field{year}{2007}
+      \field{pages}{3\bibrangedash 33}
+      \range{pages}{31}
+      \verb{doi}
+      \verb 10.1111/j.1538-4616.2007.00014.x
+      \endverb
+    \endentry
+    \entry{ter94}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=77b26b761b5b55458b37655c5470dce1}{%
+           family={Teräsvirta},
+           familyi={T\bibinitperiod},
+           given={Timo},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {[American Statistical Association, Taylor \& Francis, Ltd.]}%
+      }
+      \strng{namehash}{77b26b761b5b55458b37655c5470dce1}
+      \strng{fullhash}{77b26b761b5b55458b37655c5470dce1}
+      \strng{bibnamehash}{77b26b761b5b55458b37655c5470dce1}
+      \strng{authorbibnamehash}{77b26b761b5b55458b37655c5470dce1}
+      \strng{authornamehash}{77b26b761b5b55458b37655c5470dce1}
+      \strng{authorfullhash}{77b26b761b5b55458b37655c5470dce1}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This article considers the application of two families of nonlinear autoregressive models, the logistic (LSTAR) and exponential (ESTAR) autoregressive models. This includes the specification of the model based on simple statistical tests: linearity testing against smooth transition autoregression, determining the delay parameter and choosing between LSTAR and ESTAR models are discussed. Estimation by nonlinear least squares is considered as well as evaluating the properties of the estimated model. The proposed techniques are illustrated by examples using both simulated and real time series}
+      \field{issn}{01621459}
+      \field{journaltitle}{Journal of the American Statistical Association}
+      \field{number}{425}
+      \field{title}{Specification, Estimation, and Evaluation of Smooth Transition Autoregressive Models}
+      \field{volume}{89}
+      \field{year}{1994}
+      \field{pages}{208\bibrangedash 218}
+      \range{pages}{11}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/2291217
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/2291217
+      \endverb
+    \endentry
+    \entry{ter06}{incollection}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=77b26b761b5b55458b37655c5470dce1}{%
+           family={Teräsvirta},
+           familyi={T\bibinitperiod},
+           given={Timo},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=8684e1d87a0b270521724836cff6b326}{%
+           family={Elliott},
+           familyi={E\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=e3b3a34a4be1999f38fb18e15e7ccc31}{%
+           family={Granger},
+           familyi={G\bibinitperiod},
+           given={C.W.J.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=9b51f0c78135880e97d5202bbb15a3fa}{%
+           family={Timmermann},
+           familyi={T\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{77b26b761b5b55458b37655c5470dce1}
+      \strng{fullhash}{77b26b761b5b55458b37655c5470dce1}
+      \strng{bibnamehash}{77b26b761b5b55458b37655c5470dce1}
+      \strng{authorbibnamehash}{77b26b761b5b55458b37655c5470dce1}
+      \strng{authornamehash}{77b26b761b5b55458b37655c5470dce1}
+      \strng{authorfullhash}{77b26b761b5b55458b37655c5470dce1}
+      \strng{editorbibnamehash}{90253a0ed7cec3d07be59963b1ecc8c8}
+      \strng{editornamehash}{1d9639daad517342961318bcba3d7c5d}
+      \strng{editorfullhash}{90253a0ed7cec3d07be59963b1ecc8c8}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The topic of this chapter is forecasting with nonlinear models. First, a number of well-known nonlinear models are introduced and their properties discussed. These include the smooth transition regression model, the switching regression model whose univariate counterpart is called threshold autoregressive model, the Markov-switching or hidden Markov regression model, the artificial neural network model, and a couple of other models. Many of these nonlinear models nest a linear model. For this reason, it is advisable to test linearity before estimating the nonlinear model one thinks will fit the data. A number of linearity tests are discussed. These form a part of model specification: the remaining steps of nonlinear model building are parameter estimation and evaluation that are also briefly considered. There are two possibilities of generating forecasts from nonlinear models. Sometimes it is possible to use analytical formulas as in linear models. In many other cases, however, forecasts more than one periods ahead have to be generated numerically. Methods for doing that are presented and compared. The accuracy of point forecasts can be compared using various criteria and statistical tests. Some of these tests have the property that they are not applicable when one of the two models under comparison nests the other one. Tests that have been developed in order to work in this situation are described. The chapter also contains a simulation study showing how, in some situations, forecasts from a correctly specified nonlinear model may be inferior to ones from a certain linear model. There exist relatively large studies in which the forecasting performance of nonlinear models is compared with that of linear models using actual macroeconomic series. Main features of some such studies are briefly presented and lessons from them described. In general, no dominant nonlinear (or linear) model has emerged.}
+      \field{booktitle}{Handbook of Economic Forecasting}
+      \field{chapter}{8}
+      \field{issn}{1574-0706}
+      \field{title}{Forecasting economic variables with nonlinear models}
+      \field{volume}{1}
+      \field{year}{2006}
+      \field{pages}{413\bibrangedash 457}
+      \range{pages}{45}
+      \verb{doi}
+      \verb https://doi.org/10.1016/S1574-0706(05)01008-6
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/S1574070605010086
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S1574070605010086
+      \endverb
+      \keyw{forecast comparison,nonlinear modelling,neural network,smooth transition regression,switching regression,Markov switching,threshold autoregression}
+    \endentry
+    \entry{ter05}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=77b26b761b5b55458b37655c5470dce1}{%
+           family={Teräsvirta},
+           familyi={T\bibinitperiod},
+           given={Timo},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=7252e9937b20028f5899dad46ad255d7}{%
+           family={Dijk},
+           familyi={D\bibinitperiod},
+           given={Dick},
+           giveni={D\bibinitperiod},
+           givenun=0,
+           prefix={van},
+           prefixi={v\bibinitperiod},
+           prefixun=0}}%
+        {{uniquename=0,uniquepart=base,hash=cb50e2d7c8bf595e9524cfda2f4b35b1}{%
+           family={Medeiros},
+           familyi={M\bibinitperiod},
+           given={Marcelo\bibnamedelima C.},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ccb2d2257651569b8ec6aa0972c55744}
+      \strng{fullhash}{e69645dd3a73cabba0edd2a38da18e6d}
+      \strng{bibnamehash}{e69645dd3a73cabba0edd2a38da18e6d}
+      \strng{authorbibnamehash}{e69645dd3a73cabba0edd2a38da18e6d}
+      \strng{authornamehash}{ccb2d2257651569b8ec6aa0972c55744}
+      \strng{authorfullhash}{e69645dd3a73cabba0edd2a38da18e6d}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper, we examine the forecast accuracy of linear autoregressive, smooth transition autoregressive (STAR), and neural network (NN) time series models for 47 monthly macroeconomic variables of the G7 economies. Unlike previous studies that typically consider multiple but fixed model specifications, we use a single but dynamic specification for each model class. The point forecast results indicate that the STAR model generally outperforms linear autoregressive models. It also improves upon several fixed STAR models, demonstrating that careful specification of nonlinear time series models is of crucial importance. The results for neural network models are mixed in the sense that at long forecast horizons, an NN model obtained using Bayesian regularization produces more accurate forecasts than a corresponding model specified using the specific-to-general approach. Reasons for this outcome are discussed.}
+      \field{issn}{0169-2070}
+      \field{journaltitle}{International Journal of Forecasting}
+      \field{note}{Nonlinearities, Business Cycles and Forecasting}
+      \field{number}{4}
+      \field{title}{Linear models, smooth transition autoregressions, and neural networks for forecasting macroeconomic time series: A re-examination}
+      \field{volume}{21}
+      \field{year}{2005}
+      \field{pages}{755\bibrangedash 774}
+      \range{pages}{20}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.ijforecast.2005.04.010
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/S0169207005000464
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0169207005000464
+      \endverb
+      \keyw{Forecast combination,Forecast evaluation,Neural network model,Nonlinear modelling,Nonlinear forecasting}
+    \endentry
+    \entry{thury98}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=4e44ad36a30988609611ed36999ada0a}{%
+           family={Thury},
+           familyi={T\bibinitperiod},
+           given={Gerhard},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=cc2f8734872e7abd68593f67da8da577}{%
+           family={Witt},
+           familyi={W\bibinitperiod},
+           given={Stephen\bibnamedelima F.},
+           giveni={S\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{795da412b8c8f03e10c68d19ad15d258}
+      \strng{fullhash}{795da412b8c8f03e10c68d19ad15d258}
+      \strng{bibnamehash}{795da412b8c8f03e10c68d19ad15d258}
+      \strng{authorbibnamehash}{795da412b8c8f03e10c68d19ad15d258}
+      \strng{authornamehash}{795da412b8c8f03e10c68d19ad15d258}
+      \strng{authorfullhash}{795da412b8c8f03e10c68d19ad15d258}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Industrial production data series are volatile and often also cyclical. Hence, univariate time series models which allow for these features are expected to generate relatively accurate forecasts of industrial production. A particular class of unobservable components models — structural time series models — is used to generate forecasts of Austrian and German industrial production. A widely applied ARIMA model is used as a baseline for comparison. The empirical results show that the basic structural model generates more accurate forecasts than the ARIMA model when accuracy is measured in terms of size of error or directional change; and that the basic structural model forecasts better than the structural model with a cyclical component included on the basis of numerical measures, and tracking error for month-to-month changes.}
+      \field{issn}{0305-0483}
+      \field{journaltitle}{Omega}
+      \field{number}{6}
+      \field{title}{Forecasting industrial production using structural time series models}
+      \field{volume}{26}
+      \field{year}{1998}
+      \field{pages}{751\bibrangedash 767}
+      \range{pages}{17}
+      \verb{doi}
+      \verb https://doi.org/10.1016/S0305-0483(98)00024-3
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/S0305048398000243
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0305048398000243
+      \endverb
+      \keyw{forecasting,industrial production,structural time series modelling,ARIMA modelling,accuracy}
+    \endentry
+    \entry{yu11}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=b841bbf52eb056e56800032c75223cf3}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Yaming},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=85ea5d8c6fc2be6b9cae229fdff73961}{%
+           family={Meng},
+           familyi={M\bibinitperiod},
+           given={Xiao-Li},
+           giveni={X\bibinithyphendelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{b511bb3d891559fa3a3c1885e724a202}
+      \strng{fullhash}{b511bb3d891559fa3a3c1885e724a202}
+      \strng{bibnamehash}{b511bb3d891559fa3a3c1885e724a202}
+      \strng{authorbibnamehash}{b511bb3d891559fa3a3c1885e724a202}
+      \strng{authornamehash}{b511bb3d891559fa3a3c1885e724a202}
+      \strng{authorfullhash}{b511bb3d891559fa3a3c1885e724a202}
+      \field{sortinit}{Y}
+      \field{sortinithash}{b8d711a035f7be9840c721c82920477e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Computational and Graphical Statistics}
+      \field{number}{3}
+      \field{title}{To Center or Not to Center: That Is Not the Question—An Ancillarity–Sufficiency Interweaving Strategy (ASIS) for Boosting MCMC Efficiency}
+      \field{volume}{20}
+      \field{year}{2011}
+      \field{pages}{531\bibrangedash 570}
+      \range{pages}{40}
+      \verb{doi}
+      \verb 10.1198/jcgs.2011.203main
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1198/jcgs.2011.203main
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1198/jcgs.2011.203main
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1198/jcgs.2011.203main
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
